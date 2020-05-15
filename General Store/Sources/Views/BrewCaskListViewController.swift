@@ -37,13 +37,17 @@ class BrewCaskListViewController: NSViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		// Register cell
+		let identifier = NSUserInterfaceItemIdentifier("Cell")
+		let nib = NSNib(nibNamed: .init(describing: BrewCaskItem.self), bundle: nil)
+		collectionView.register(nib, forItemWithIdentifier: identifier)
+		
 //		tableView.rx.itemSelected
 //			.bind(to: input.itemSelected)
 //			.disposed(by: disposeBag)
-//
-		output.items.bind(to: collectionView.rx.items(cellIdentifier: "Cell", cellType: BrewCaskItem.self)) { row, element, cell in
-
-		}
-		.disposed(by: disposeBag)
+		
+		output.items.bind(to: collectionView.rx.items(cellIdentifier: identifier, cellType: BrewCaskItem.self)) { row, element, cell in
+			
+		}.disposed(by: disposeBag)
 	}
 }

@@ -797,7 +797,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="SQ2-19-Leh" id="Ob9-qK-y6A"/>
+                        <outlet property="collectionView" destination="SQ2-19-Leh" id="uWO-w3-BEN"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
