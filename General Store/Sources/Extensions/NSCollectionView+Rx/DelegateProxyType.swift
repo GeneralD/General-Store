@@ -57,4 +57,5 @@ extension ObservableType {
 			}
 	}
 }
+
 #endif

@@ -25,7 +25,7 @@ private final class CollectionViewDataSourceNotSet: NSObject, NSCollectionViewDa
 	}
 	
 	func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
-		rxAbstractMethod(message: "Datasource not set")
+		rxAbstractMethod(message: dataSourceNotSet)
 	}
 }
 

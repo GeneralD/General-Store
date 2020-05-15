@@ -5,6 +5,7 @@
 //  Created by Yumenosuke Koukata on 2020/05/15.
 //  Copyright © 2020 ZYXW. All rights reserved.
 //
+
 #if os(OSX)
 
 import Cocoa

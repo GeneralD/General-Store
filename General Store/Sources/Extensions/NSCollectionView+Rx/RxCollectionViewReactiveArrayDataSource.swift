@@ -7,6 +7,7 @@
 //
 
 #if os(OSX)
+
 import RxSwift
 import RxCocoa
 
