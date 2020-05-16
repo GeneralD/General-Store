@@ -9,6 +9,7 @@
 import Moya
 
 enum Homebrew {
+	case formulaList
 	case caskList
 }
 
@@ -21,6 +22,8 @@ extension Homebrew: TargetType {
 		switch self {
 		case .caskList:
 			return "/cask.json"
+		case .formulaList:
+			return "/formula.json"
 		}
 	}
 	
@@ -31,9 +34,9 @@ extension Homebrew: TargetType {
 	var sampleData: Data {
 		switch self {
 		case .caskList:
-			return Bundle.main.path(forResource: "cask", ofType: "json")
-				.flatMap(FileHandle.init(forReadingAtPath: ))?
-				.readDataToEndOfFile() ?? .init()
+			return data(fromResource: "cask", ofType: "json") ?? .init()
+		case .formulaList:
+			return data(fromResource: "formula", ofType: "json") ?? .init()
 		}
 	}
 	
@@ -43,5 +46,11 @@ extension Homebrew: TargetType {
 	
 	var headers: [String : String]? {
 		.none
+	}
+	
+	private func data(fromResource name: String, ofType type: String) -> Data? {
+		Bundle.main.path(forResource: name, ofType: type)
+			.flatMap(FileHandle.init(forReadingAtPath: ))?
+			.readDataToEndOfFile()
 	}
 }

@@ -1,0 +1,382 @@
+[
+	{
+		"name": "a2ps",
+		"full_name": "a2ps",
+		"oldname": null,
+		"aliases": [],
+		"versioned_formulae": [],
+		"desc": "Any-to-PostScript filter",
+		"homepage": "https://www.gnu.org/software/a2ps/",
+		"versions": {
+			"stable": "4.14",
+			"devel": null,
+			"head": null,
+			"bottle": true
+		},
+		"urls": {
+			"stable": {
+				"url": "https://ftp.gnu.org/gnu/a2ps/a2ps-4.14.tar.gz",
+				"tag": null,
+				"revision": null
+			}
+		},
+		"revision": 0,
+		"version_scheme": 0,
+		"bottle": {
+			"stable": {
+				"rebuild": 3,
+				"cellar": "/usr/local/Cellar",
+				"prefix": "/usr/local",
+				"root_url": "https://homebrew.bintray.com/bottles",
+				"files": {
+					"catalina": {
+						"url": "https://homebrew.bintray.com/bottles/a2ps-4.14.catalina.bottle.3.tar.gz",
+						"sha256": "98a293e2d83134c9a1c35026f68207d9fc2ac1bde9d7d15dd29849d7d9c5b237"
+					},
+					"mojave": {
+						"url": "https://homebrew.bintray.com/bottles/a2ps-4.14.mojave.bottle.3.tar.gz",
+						"sha256": "b3d7d7bd0bfcada7fc2bc2340ab67362e5087e53b4d611d84aafedf713bde6c3"
+					},
+					"high_sierra": {
+						"url": "https://homebrew.bintray.com/bottles/a2ps-4.14.high_sierra.bottle.3.tar.gz",
+						"sha256": "99646196c8b9e6d5a7b67ecca1589160749d690128bb89aace3b79d4c355dfde"
+					},
+					"sierra": {
+						"url": "https://homebrew.bintray.com/bottles/a2ps-4.14.sierra.bottle.3.tar.gz",
+						"sha256": "5a1c466a3f833797710464dd1aaf4ad6c9ff0a47de33ab3b2ba9cf0c2be36bfd"
+					},
+					"el_capitan": {
+						"url": "https://homebrew.bintray.com/bottles/a2ps-4.14.el_capitan.bottle.3.tar.gz",
+						"sha256": "532c3f14debcd59028285dad1d6fe41dbad481718cc1752b1b9e7c05fd82e27f"
+					}
+				}
+			}
+		},
+		"keg_only": false,
+		"bottle_disabled": false,
+		"options": [],
+		"build_dependencies": [],
+		"dependencies": [],
+		"recommended_dependencies": [],
+		"optional_dependencies": [],
+		"uses_from_macos": [],
+		"requirements": [],
+		"conflicts_with": [],
+		"caveats": null,
+		"installed": [],
+		"linked_keg": null,
+		"pinned": false,
+		"outdated": false
+	},
+	{
+		"name": "a52dec",
+		"full_name": "a52dec",
+		"oldname": null,
+		"aliases": [],
+		"versioned_formulae": [],
+		"desc": "Library for decoding ATSC A/52 streams (AKA 'AC-3')",
+		"homepage": "https://liba52.sourceforge.io/",
+		"versions": {
+			"stable": "0.7.4",
+			"devel": null,
+			"head": null,
+			"bottle": true
+		},
+		"urls": {
+			"stable": {
+				"url": "https://liba52.sourceforge.io/files/a52dec-0.7.4.tar.gz",
+				"tag": null,
+				"revision": null
+			}
+		},
+		"revision": 0,
+		"version_scheme": 0,
+		"bottle": {
+			"stable": {
+				"rebuild": 0,
+				"cellar": ":any",
+				"prefix": "/usr/local",
+				"root_url": "https://homebrew.bintray.com/bottles",
+				"files": {
+					"catalina": {
+						"url": "https://homebrew.bintray.com/bottles/a52dec-0.7.4.catalina.bottle.tar.gz",
+						"sha256": "a40e7384a64c5d4e22209088af424eeb4a9de3eba4c5451f95a2a1b6732969f6"
+					},
+					"mojave": {
+						"url": "https://homebrew.bintray.com/bottles/a52dec-0.7.4.mojave.bottle.tar.gz",
+						"sha256": "5186add25fb7aae66c80139b56ea81fb3aff1f87e74354c2cebe022374532286"
+					},
+					"high_sierra": {
+						"url": "https://homebrew.bintray.com/bottles/a52dec-0.7.4.high_sierra.bottle.tar.gz",
+						"sha256": "c7485fae127d02a6628186b821d72fc40bc82019ae30ddee0abfacf2b63701dc"
+					},
+					"sierra": {
+						"url": "https://homebrew.bintray.com/bottles/a52dec-0.7.4.sierra.bottle.tar.gz",
+						"sha256": "150123fdf33421b85f4625d73c015a660300db698a82fd0165475fe8e7081d0b"
+					},
+					"el_capitan": {
+						"url": "https://homebrew.bintray.com/bottles/a52dec-0.7.4.el_capitan.bottle.tar.gz",
+						"sha256": "2feac8f578fd1aa43385ce8714b059c90f4aaf3a0401d8ba825939e8e8ab7b1b"
+					},
+					"yosemite": {
+						"url": "https://homebrew.bintray.com/bottles/a52dec-0.7.4.yosemite.bottle.tar.gz",
+						"sha256": "cfe0ddcf275b03d9ad0c626174962601ae18d3f77fa35266228425b818ce4a7f"
+					},
+					"mavericks": {
+						"url": "https://homebrew.bintray.com/bottles/a52dec-0.7.4.mavericks.bottle.tar.gz",
+						"sha256": "cb40eed81300fa32069bac07244cf7f56363cc04af853ddb75bada292e8d9912"
+					}
+				}
+			}
+		},
+		"keg_only": false,
+		"bottle_disabled": false,
+		"options": [],
+		"build_dependencies": [],
+		"dependencies": [],
+		"recommended_dependencies": [],
+		"optional_dependencies": [],
+		"uses_from_macos": [],
+		"requirements": [],
+		"conflicts_with": [],
+		"caveats": null,
+		"installed": [],
+		"linked_keg": null,
+		"pinned": false,
+		"outdated": false
+	},
+	{
+		"name": "aacgain",
+		"full_name": "aacgain",
+		"oldname": null,
+		"aliases": [],
+		"versioned_formulae": [],
+		"desc": "AAC-supporting version of mp3gain",
+		"homepage": "https://aacgain.altosdesign.com/",
+		"versions": {
+			"stable": "1.8",
+			"devel": null,
+			"head": null,
+			"bottle": true
+		},
+		"urls": {
+			"stable": {
+				"url": "https://aacgain.altosdesign.com/alvarez/aacgain-1.8.tar.bz2",
+				"tag": null,
+				"revision": null
+			}
+		},
+		"revision": 0,
+		"version_scheme": 0,
+		"bottle": {
+			"stable": {
+				"rebuild": 0,
+				"cellar": ":any_skip_relocation",
+				"prefix": "/usr/local",
+				"root_url": "https://homebrew.bintray.com/bottles",
+				"files": {
+					"catalina": {
+						"url": "https://homebrew.bintray.com/bottles/aacgain-1.8.catalina.bottle.tar.gz",
+						"sha256": "a8ec07d22279b4bdd471ee7a307e6d365a906432ef49533afeca2de53add8d55"
+					},
+					"mojave": {
+						"url": "https://homebrew.bintray.com/bottles/aacgain-1.8.mojave.bottle.tar.gz",
+						"sha256": "a6d9e4d4f20311e0a91bdbc6f42ef8894e6a6b9f4d8290938d14f02868821c0d"
+					},
+					"high_sierra": {
+						"url": "https://homebrew.bintray.com/bottles/aacgain-1.8.high_sierra.bottle.tar.gz",
+						"sha256": "eda9c36cf9517c9f342031632b9fb38f77d8150cc2a7cf88b57e46f77395c96e"
+					},
+					"sierra": {
+						"url": "https://homebrew.bintray.com/bottles/aacgain-1.8.sierra.bottle.tar.gz",
+						"sha256": "2d7ea587b06feb7ccb4f6dfaee3a6d7b329e041cc80af969afb8b5d1631997e8"
+					},
+					"el_capitan": {
+						"url": "https://homebrew.bintray.com/bottles/aacgain-1.8.el_capitan.bottle.tar.gz",
+						"sha256": "b97aaaf19fee69734b4a29e22c498becaa94b3025a192a7ef8f1ecfb0a2ce87c"
+					},
+					"yosemite": {
+						"url": "https://homebrew.bintray.com/bottles/aacgain-1.8.yosemite.bottle.tar.gz",
+						"sha256": "5c01278c495e8a67b7af02f6355ac6a79ce6b4caa5148503346eb33e7d26b70a"
+					},
+					"mavericks": {
+						"url": "https://homebrew.bintray.com/bottles/aacgain-1.8.mavericks.bottle.tar.gz",
+						"sha256": "9bf1cb0bf030d70bb37a311b92621747d02379cb7f6ae6734bcb4239bdb9d4e6"
+					}
+				}
+			}
+		},
+		"keg_only": false,
+		"bottle_disabled": false,
+		"options": [],
+		"build_dependencies": [],
+		"dependencies": [],
+		"recommended_dependencies": [],
+		"optional_dependencies": [],
+		"uses_from_macos": [],
+		"requirements": [],
+		"conflicts_with": [],
+		"caveats": null,
+		"installed": [],
+		"linked_keg": null,
+		"pinned": false,
+		"outdated": false
+	},
+	{
+		"name": "aalib",
+		"full_name": "aalib",
+		"oldname": null,
+		"aliases": [],
+		"versioned_formulae": [],
+		"desc": "Portable ASCII art graphics library",
+		"homepage": "https://aa-project.sourceforge.io/aalib/",
+		"versions": {
+			"stable": "1.4rc5",
+			"devel": null,
+			"head": null,
+			"bottle": true
+		},
+		"urls": {
+			"stable": {
+				"url": "https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz",
+				"tag": null,
+				"revision": null
+			}
+		},
+		"revision": 1,
+		"version_scheme": 0,
+		"bottle": {
+			"stable": {
+				"rebuild": 0,
+				"cellar": ":any_skip_relocation",
+				"prefix": "/usr/local",
+				"root_url": "https://homebrew.bintray.com/bottles",
+				"files": {
+					"catalina": {
+						"url": "https://homebrew.bintray.com/bottles/aalib-1.4rc5_1.catalina.bottle.tar.gz",
+						"sha256": "306da4a8cb39ef81eed8b81a7d1c1c7bd47405d8270d036dde9c07c630fa4ea3"
+					},
+					"mojave": {
+						"url": "https://homebrew.bintray.com/bottles/aalib-1.4rc5_1.mojave.bottle.tar.gz",
+						"sha256": "a19ebbf86362d9a90900dd0b4013ebed778cd8681c0b3ed122c8bbaa04b11cbe"
+					},
+					"high_sierra": {
+						"url": "https://homebrew.bintray.com/bottles/aalib-1.4rc5_1.high_sierra.bottle.tar.gz",
+						"sha256": "b2c5467ff9182645676381967b8dc89878f88900b19bed34ef432fd3257aa2a0"
+					},
+					"sierra": {
+						"url": "https://homebrew.bintray.com/bottles/aalib-1.4rc5_1.sierra.bottle.tar.gz",
+						"sha256": "2c2d05720ca991422e4c27e3f770c29024c5197871cba67404f4e72a3cfaf002"
+					},
+					"el_capitan": {
+						"url": "https://homebrew.bintray.com/bottles/aalib-1.4rc5_1.el_capitan.bottle.tar.gz",
+						"sha256": "9b3f19e5da28fb682aeb1fe40f1747d1b532490dd50262978aaefcb7afbc8804"
+					},
+					"yosemite": {
+						"url": "https://homebrew.bintray.com/bottles/aalib-1.4rc5_1.yosemite.bottle.tar.gz",
+						"sha256": "9e08dd4e3545b05353f3158e4e756c20a301bef295b72183e1fd5fb1d6d8e897"
+					}
+				}
+			}
+		},
+		"keg_only": false,
+		"bottle_disabled": false,
+		"options": [],
+		"build_dependencies": [],
+		"dependencies": [],
+		"recommended_dependencies": [],
+		"optional_dependencies": [],
+		"uses_from_macos": [],
+		"requirements": [],
+		"conflicts_with": [],
+		"caveats": null,
+		"installed": [],
+		"linked_keg": null,
+		"pinned": false,
+		"outdated": false
+	},
+	{
+		"name": "aamath",
+		"full_name": "aamath",
+		"oldname": null,
+		"aliases": [],
+		"versioned_formulae": [],
+		"desc": "Renders mathematical expressions as ASCII art",
+		"homepage": "http://fuse.superglue.se/aamath/",
+		"versions": {
+			"stable": "0.3",
+			"devel": null,
+			"head": null,
+			"bottle": true
+		},
+		"urls": {
+			"stable": {
+				"url": "http://fuse.superglue.se/aamath/aamath-0.3.tar.gz",
+				"tag": null,
+				"revision": null
+			}
+		},
+		"revision": 0,
+		"version_scheme": 0,
+		"bottle": {
+			"stable": {
+				"rebuild": 0,
+				"cellar": ":any_skip_relocation",
+				"prefix": "/usr/local",
+				"root_url": "https://homebrew.bintray.com/bottles",
+				"files": {
+					"catalina": {
+						"url": "https://homebrew.bintray.com/bottles/aamath-0.3.catalina.bottle.tar.gz",
+						"sha256": "1ac1413ef0322b280ae5bd5663373ed959ee54d28dbdd3261fc4da6e57abf44c"
+					},
+					"mojave": {
+						"url": "https://homebrew.bintray.com/bottles/aamath-0.3.mojave.bottle.tar.gz",
+						"sha256": "79ef03b1d334136b693131b133944109545b07aca2dfd9165531016e4250444c"
+					},
+					"high_sierra": {
+						"url": "https://homebrew.bintray.com/bottles/aamath-0.3.high_sierra.bottle.tar.gz",
+						"sha256": "41223cb51bc006abfba33b6af77b665c28de4155d19e5f43d0561b885b73368f"
+					},
+					"sierra": {
+						"url": "https://homebrew.bintray.com/bottles/aamath-0.3.sierra.bottle.tar.gz",
+						"sha256": "d537cb11d2dcbac9b5d5356c471775699312e83450635ba7676083f381a531cd"
+					},
+					"el_capitan": {
+						"url": "https://homebrew.bintray.com/bottles/aamath-0.3.el_capitan.bottle.tar.gz",
+						"sha256": "8b805e37fd5f4536b4fbf7f3ae6251b645b4b132027d56ccd015a6036c304744"
+					},
+					"yosemite": {
+						"url": "https://homebrew.bintray.com/bottles/aamath-0.3.yosemite.bottle.tar.gz",
+						"sha256": "1e22022e621e7d2337edf4a80ae2c1618a89089132656d85cc141774565e34d7"
+					},
+					"mavericks": {
+						"url": "https://homebrew.bintray.com/bottles/aamath-0.3.mavericks.bottle.tar.gz",
+						"sha256": "0212e0b5844ea1a491bc7d4fcab2b590921042b28bc50e79c36cd9e15d08e2aa"
+					}
+				}
+			}
+		},
+		"keg_only": false,
+		"bottle_disabled": false,
+		"options": [],
+		"build_dependencies": [],
+		"dependencies": [],
+		"recommended_dependencies": [],
+		"optional_dependencies": [],
+		"uses_from_macos": [
+			{
+				"bison": "build"
+			},
+			{
+				"flex": "build"
+			}
+		],
+		"requirements": [],
+		"conflicts_with": [],
+		"caveats": null,
+		"installed": [],
+		"linked_keg": null,
+		"pinned": false,
+		"outdated": false
+	}
+]
