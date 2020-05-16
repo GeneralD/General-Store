@@ -15,6 +15,12 @@
 		B327DE99246EB24100F029B9 /* RxCollectionViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE98246EB24100F029B9 /* RxCollectionViewDataSourceProxy.swift */; };
 		B327DE9B246EB4A500F029B9 /* DelegateProxyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE9A246EB4A500F029B9 /* DelegateProxyType.swift */; };
 		B327DEB9246ED4D200F029B9 /* NSCollectionView+RegisterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEB8246ED4D200F029B9 /* NSCollectionView+RegisterItem.swift */; };
+		B327DEBD246F778900F029B9 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEBB246F778800F029B9 /* StoryboardSceneBased.swift */; };
+		B327DEBE246F778900F029B9 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEBC246F778900F029B9 /* StoryboardBased.swift */; };
+		B327DEC4246F788500F029B9 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEBF246F788400F029B9 /* NibOwnerLoadable.swift */; };
+		B327DEC5246F788500F029B9 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEC0246F788400F029B9 /* UICollectionView+Reusable.swift */; };
+		B327DEC6246F788500F029B9 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEC1246F788400F029B9 /* NibLoadable.swift */; };
+		B327DEC7246F788500F029B9 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEC2246F788500F029B9 /* Reusable.swift */; };
 		B3467A32246D337200C03E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A31246D337200C03E8A /* AppDelegate.swift */; };
 		B3467A34246D337200C03E8A /* BrewCaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A33246D337200C03E8A /* BrewCaskListViewController.swift */; };
 		B3467A36246D337500C03E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3467A35246D337500C03E8A /* Assets.xcassets */; };
@@ -54,6 +60,12 @@
 		B327DE98246EB24100F029B9 /* RxCollectionViewDataSourceProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewDataSourceProxy.swift; sourceTree = "<group>"; };
 		B327DE9A246EB4A500F029B9 /* DelegateProxyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxyType.swift; sourceTree = "<group>"; };
 		B327DEB8246ED4D200F029B9 /* NSCollectionView+RegisterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+RegisterItem.swift"; sourceTree = "<group>"; };
+		B327DEBB246F778800F029B9 /* StoryboardSceneBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSceneBased.swift; sourceTree = "<group>"; };
+		B327DEBC246F778900F029B9 /* StoryboardBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
+		B327DEBF246F788400F029B9 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
+		B327DEC0246F788400F029B9 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		B327DEC1246F788400F029B9 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		B327DEC2246F788500F029B9 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		B3467A2E246D337200C03E8A /* General Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "General Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3467A31246D337200C03E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3467A33246D337200C03E8A /* BrewCaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskListViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +141,19 @@
 			path = "NSCollectionView+Rx";
 			sourceTree = "<group>";
 		};
+		B327DEBA246F76E500F029B9 /* NSCollectionViewReusable */ = {
+			isa = PBXGroup;
+			children = (
+				B327DEBC246F778900F029B9 /* StoryboardBased.swift */,
+				B327DEBB246F778800F029B9 /* StoryboardSceneBased.swift */,
+				B327DEC1246F788400F029B9 /* NibLoadable.swift */,
+				B327DEBF246F788400F029B9 /* NibOwnerLoadable.swift */,
+				B327DEC2246F788500F029B9 /* Reusable.swift */,
+				B327DEC0246F788400F029B9 /* UICollectionView+Reusable.swift */,
+			);
+			path = NSCollectionViewReusable;
+			sourceTree = "<group>";
+		};
 		B3467A25246D337200C03E8A = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +197,7 @@
 		B3467A51246D435200C03E8A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B327DEBA246F76E500F029B9 /* NSCollectionViewReusable */,
 				B327DEA0246EC25B00F029B9 /* NSCollectionView+Rx */,
 				B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */,
 				B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */,
@@ -389,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3467A5F246D542300C03E8A /* BrewCaskItemModel.swift in Sources */,
+				B327DEC5246F788500F029B9 /* UICollectionView+Reusable.swift in Sources */,
 				B327DE95246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift in Sources */,
 				B3467A55246D47AD00C03E8A /* BrewCaskListViewModel.swift in Sources */,
 				B3467A50246D421000C03E8A /* CommandTask.swift in Sources */,
@@ -396,14 +423,19 @@
 				B3467A34246D337200C03E8A /* BrewCaskListViewController.swift in Sources */,
 				B3467A53246D439000C03E8A /* CommandTask+Rx.swift in Sources */,
 				B327DE99246EB24100F029B9 /* RxCollectionViewDataSourceProxy.swift in Sources */,
+				B327DEC6246F788500F029B9 /* NibLoadable.swift in Sources */,
 				B3467A32246D337200C03E8A /* AppDelegate.swift in Sources */,
+				B327DEC4246F788500F029B9 /* NibOwnerLoadable.swift in Sources */,
+				B327DEC7246F788500F029B9 /* Reusable.swift in Sources */,
 				B327DE93246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift in Sources */,
+				B327DEBE246F778900F029B9 /* StoryboardBased.swift in Sources */,
 				B3467A5C246D53F700C03E8A /* BrewCaskItem.swift in Sources */,
 				B327DE97246EB03300F029B9 /* RxCocoa.swift in Sources */,
 				B327DE91246EA9A700F029B9 /* NSCollectionView+Rx.swift in Sources */,
 				B327DEB9246ED4D200F029B9 /* NSCollectionView+RegisterItem.swift in Sources */,
 				B3467A57246D48BB00C03E8A /* ObserverConvertible.swift in Sources */,
 				B3467A59246D4BBC00C03E8A /* ObservableTypeExtension.swift in Sources */,
+				B327DEBD246F778900F029B9 /* StoryboardSceneBased.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
