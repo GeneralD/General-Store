@@ -10,6 +10,7 @@
 		641714789F153510B2352457 /* Pods_General_StoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0B48700A220B55A3F08002 /* Pods_General_StoreTests.framework */; };
 		B323666B247003D000274BFE /* URL+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B323666A247003D000274BFE /* URL+Rx.swift */; };
 		B323666D24703D8D00274BFE /* formula.json in Resources */ = {isa = PBXBuildFile; fileRef = B323666C24703D8D00274BFE /* formula.json */; };
+		B3236670247052C200274BFE /* FormulaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B323666F247052C200274BFE /* FormulaModel.swift */; };
 		B327DE91246EA9A700F029B9 /* NSCollectionView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE90246EA9A700F029B9 /* NSCollectionView+Rx.swift */; };
 		B327DE93246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE92246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift */; };
 		B327DE95246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE94246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift */; };
@@ -68,6 +69,7 @@
 		9F93A2CFEB66613324C23D6F /* Pods-General StoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General StoreTests.release.xcconfig"; path = "Target Support Files/Pods-General StoreTests/Pods-General StoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		B323666A247003D000274BFE /* URL+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Rx.swift"; sourceTree = "<group>"; };
 		B323666C24703D8D00274BFE /* formula.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = formula.json; sourceTree = "<group>"; };
+		B323666F247052C200274BFE /* FormulaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaModel.swift; sourceTree = "<group>"; };
 		B327DE90246EA9A700F029B9 /* NSCollectionView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Rx.swift"; sourceTree = "<group>"; };
 		B327DE92246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewReactiveArrayDataSource.swift; sourceTree = "<group>"; };
 		B327DE94246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewDataSourceType.swift; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 			children = (
 				B39D3494246FA1C100C07234 /* Homebrew.swift */,
 				B39D3496246FA55C00C07234 /* CaskModel.swift */,
+				B323666F247052C200274BFE /* FormulaModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				B327DEDB246F831700F029B9 /* NSCollectionView+Items.swift in Sources */,
 				B327DED7246F831700F029B9 /* Configurable.swift in Sources */,
 				B3467A50246D421000C03E8A /* CommandTask.swift in Sources */,
+				B3236670247052C200274BFE /* FormulaModel.swift in Sources */,
 				B327DE9B246EB4A500F029B9 /* DelegateProxyType.swift in Sources */,
 				B3467A34246D337200C03E8A /* BrewCaskListViewController.swift in Sources */,
 				B3467A53246D439000C03E8A /* CommandTask+Rx.swift in Sources */,
