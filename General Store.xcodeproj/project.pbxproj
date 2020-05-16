@@ -40,9 +40,9 @@
 		B3467A55246D47AD00C03E8A /* BrewCaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A54246D47AD00C03E8A /* BrewCaskListViewModel.swift */; };
 		B3467A57246D48BB00C03E8A /* ObserverConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */; };
 		B3467A59246D4BBC00C03E8A /* ObservableTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */; };
-		B3467A5C246D53F700C03E8A /* BrewCaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A5A246D53F700C03E8A /* BrewCaskItem.swift */; };
-		B3467A5D246D53F700C03E8A /* BrewCaskItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3467A5B246D53F700C03E8A /* BrewCaskItem.xib */; };
-		B3467A5F246D542300C03E8A /* BrewCaskItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A5E246D542300C03E8A /* BrewCaskItemModel.swift */; };
+		B3467A5C246D53F700C03E8A /* BrewCaskViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A5A246D53F700C03E8A /* BrewCaskViewItem.swift */; };
+		B3467A5D246D53F700C03E8A /* BrewCaskViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3467A5B246D53F700C03E8A /* BrewCaskViewItem.xib */; };
+		B3467A5F246D542300C03E8A /* BrewCaskViewItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A5E246D542300C03E8A /* BrewCaskViewItemModel.swift */; };
 		B39D3495246FA1C100C07234 /* Homebrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D3494246FA1C100C07234 /* Homebrew.swift */; };
 		B39D3497246FA55C00C07234 /* CaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D3496246FA55C00C07234 /* CaskModel.swift */; };
 		BFD47C1C148F79E721F161C0 /* Pods_General_Store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B5711FF36A58C5353BFC86 /* Pods_General_Store.framework */; };
@@ -101,9 +101,9 @@
 		B3467A54246D47AD00C03E8A /* BrewCaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskListViewModel.swift; sourceTree = "<group>"; };
 		B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverConvertible.swift; sourceTree = "<group>"; };
 		B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableTypeExtension.swift; sourceTree = "<group>"; };
-		B3467A5A246D53F700C03E8A /* BrewCaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskItem.swift; sourceTree = "<group>"; };
-		B3467A5B246D53F700C03E8A /* BrewCaskItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrewCaskItem.xib; sourceTree = "<group>"; };
-		B3467A5E246D542300C03E8A /* BrewCaskItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskItemModel.swift; sourceTree = "<group>"; };
+		B3467A5A246D53F700C03E8A /* BrewCaskViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskViewItem.swift; sourceTree = "<group>"; };
+		B3467A5B246D53F700C03E8A /* BrewCaskViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrewCaskViewItem.xib; sourceTree = "<group>"; };
+		B3467A5E246D542300C03E8A /* BrewCaskViewItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskViewItemModel.swift; sourceTree = "<group>"; };
 		B39D3494246FA1C100C07234 /* Homebrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homebrew.swift; sourceTree = "<group>"; };
 		B39D3496246FA55C00C07234 /* CaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskModel.swift; sourceTree = "<group>"; };
 		C34D95A76C20C691A9254F00 /* Pods-General Store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General Store.debug.xcconfig"; path = "Target Support Files/Pods-General Store/Pods-General Store.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +147,15 @@
 				1F0B48700A220B55A3F08002 /* Pods_General_StoreTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3236669246FF5B600274BFE /* User Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				B3467A37246D337500C03E8A /* Main.storyboard */,
+				B3467A5B246D53F700C03E8A /* BrewCaskViewItem.xib */,
+			);
+			path = "User Interfaces";
 			sourceTree = "<group>";
 		};
 		B327DEA0246EC25B00F029B9 /* NSCollectionView+Rx */ = {
@@ -263,8 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				B3467A33246D337200C03E8A /* BrewCaskListViewController.swift */,
-				B3467A5A246D53F700C03E8A /* BrewCaskItem.swift */,
-				B3467A5B246D53F700C03E8A /* BrewCaskItem.xib */,
+				B3467A5A246D53F700C03E8A /* BrewCaskViewItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -273,7 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				B3467A54246D47AD00C03E8A /* BrewCaskListViewModel.swift */,
-				B3467A5E246D542300C03E8A /* BrewCaskItemModel.swift */,
+				B3467A5E246D542300C03E8A /* BrewCaskViewItemModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -295,8 +303,8 @@
 		B3467A63246D584700C03E8A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B3236669246FF5B600274BFE /* User Interfaces */,
 				B327DEE0246F9DCD00F029B9 /* Sample Data */,
-				B3467A37246D337500C03E8A /* Main.storyboard */,
 				B3467A35246D337500C03E8A /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -397,7 +405,7 @@
 			files = (
 				B3467A36246D337500C03E8A /* Assets.xcassets in Resources */,
 				B3467A39246D337500C03E8A /* Main.storyboard in Resources */,
-				B3467A5D246D53F700C03E8A /* BrewCaskItem.xib in Resources */,
+				B3467A5D246D53F700C03E8A /* BrewCaskViewItem.xib in Resources */,
 				B327DEDF246F9DC200F029B9 /* cask.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,7 +482,7 @@
 			files = (
 				B327DED3246F831700F029B9 /* CollectionViewCellWithDelegateFactory.swift in Sources */,
 				B327DED6246F831700F029B9 /* CollectionViewCellFactoryBinder.swift in Sources */,
-				B3467A5F246D542300C03E8A /* BrewCaskItemModel.swift in Sources */,
+				B3467A5F246D542300C03E8A /* BrewCaskViewItemModel.swift in Sources */,
 				B327DEC5246F788500F029B9 /* NSCollectionView+Reusable.swift in Sources */,
 				B327DE95246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift in Sources */,
 				B3467A55246D47AD00C03E8A /* BrewCaskListViewModel.swift in Sources */,
@@ -491,7 +499,7 @@
 				B327DEC7246F788500F029B9 /* Reusable.swift in Sources */,
 				B327DE93246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift in Sources */,
 				B327DEBE246F778900F029B9 /* StoryboardBased.swift in Sources */,
-				B3467A5C246D53F700C03E8A /* BrewCaskItem.swift in Sources */,
+				B3467A5C246D53F700C03E8A /* BrewCaskViewItem.swift in Sources */,
 				B327DE97246EB03300F029B9 /* RxCocoa.swift in Sources */,
 				B327DE91246EA9A700F029B9 /* NSCollectionView+Rx.swift in Sources */,
 				B327DEDA246F831700F029B9 /* HasDelegate.swift in Sources */,

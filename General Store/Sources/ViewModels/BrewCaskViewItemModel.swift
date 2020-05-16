@@ -10,15 +10,15 @@ import Foundation
 import RxSwift
 import RxRelay
 
-protocol BrewCaskItemModelInput {
+protocol BrewCaskViewItemModelInput {
 	var model: AnyObserver<CaskModel> { get }
 }
 
-protocol BrewCaskItemModelOutput {
+protocol BrewCaskViewItemModelOutput {
 	var name: Observable<String?> { get }
 }
 
-final class BrewCaskItemModel: BrewCaskItemModelInput, BrewCaskItemModelOutput {
+final class BrewCaskViewItemModel: BrewCaskViewItemModelInput, BrewCaskViewItemModelOutput {
 	
 	// MARK: Inputs
 	let model: AnyObserver<CaskModel>

@@ -1,5 +1,5 @@
 //
-//  BrewCaskItem.swift
+//  BrewCaskViewItem.swift
 //  General Store
 //
 //  Created by Yumenosuke Koukata on 2020/05/14.
@@ -10,10 +10,10 @@ import Cocoa
 import RxSwift
 import RxCocoa
 
-class BrewCaskItem: NSCollectionViewItem {
+class BrewCaskViewItem: NSCollectionViewItem {
 	
-	typealias Input = BrewCaskItemModelInput
-	typealias Output = BrewCaskItemModelOutput
+	typealias Input = BrewCaskViewItemModelInput
+	typealias Output = BrewCaskViewItemModelOutput
 	
 	@IBOutlet weak var nameLabel: NSTextField!
 	
@@ -26,11 +26,11 @@ class BrewCaskItem: NSCollectionViewItem {
 	
 }
 
-extension BrewCaskItem: NibLoadable, Reusable {}
+extension BrewCaskViewItem: NibLoadable, Reusable {}
 
-extension BrewCaskItem: Configurable {
+extension BrewCaskViewItem: Configurable {
 	
-	func configure(with model: BrewCaskItemModel) {
+	func configure(with model: BrewCaskViewItemModel) {
 //		let input: Input = model
 		let output: Output = model
 		

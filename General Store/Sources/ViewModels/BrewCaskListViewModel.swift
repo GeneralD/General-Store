@@ -16,7 +16,7 @@ protocol BrewCaskListViewModelInput {
 }
 
 protocol BrewCaskListViewModelOutput {
-	var items: Observable<[BrewCaskItemModel]> { get }
+	var items: Observable<[BrewCaskViewItemModel]> { get }
 }
 
 final class BrewCaskListViewModel: BrewCaskListViewModelInput, BrewCaskListViewModelOutput {
@@ -25,7 +25,7 @@ final class BrewCaskListViewModel: BrewCaskListViewModelInput, BrewCaskListViewM
 	let reload: AnyObserver<()>
 	
 	// MARK: Outputs
-	let items: Observable<[BrewCaskItemModel]>
+	let items: Observable<[BrewCaskViewItemModel]>
 	
 	private let disposeBag = DisposeBag()
 	
@@ -33,7 +33,7 @@ final class BrewCaskListViewModel: BrewCaskListViewModelInput, BrewCaskListViewM
 		let _reload = BehaviorRelay<()>(value: ())
 		reload = _reload.asObserver()
 		
-		let _items = BehaviorRelay<[BrewCaskItemModel]>(value: [])
+		let _items = BehaviorRelay<[BrewCaskViewItemModel]>(value: [])
 		items = _items.asObservable()
 
 		let provider = MoyaProvider<Homebrew>()
@@ -41,7 +41,7 @@ final class BrewCaskListViewModel: BrewCaskListViewModelInput, BrewCaskListViewM
 			.flatMap { provider.rx.request(.caskList) }
 			.filterSuccessfulStatusCodes()
 			.map([CaskModel].self)
-			.map { $0.map(BrewCaskItemModel.init(model: )) }
+			.map { $0.map(BrewCaskViewItemModel.init(model: )) }
 			.bind(to: _items)
 			.disposed(by: disposeBag)
 	}

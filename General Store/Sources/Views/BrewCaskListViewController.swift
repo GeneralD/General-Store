@@ -38,14 +38,14 @@ class BrewCaskListViewController: NSViewController {
 		super.viewDidLoad()
 		
 		// Register cell
-		collectionView.register(itemType: BrewCaskItem.self)
+		collectionView.register(itemType: BrewCaskViewItem.self)
 		
 		//		tableView.rx.itemSelected
 		//			.bind(to: input.itemSelected)
 		//			.disposed(by: disposeBag)
 		
 		output.items
-			.bind(to: collectionView.rx.items(BrewCaskItem.self))
+			.bind(to: collectionView.rx.items(BrewCaskViewItem.self))
 			.disposed(by: disposeBag)
 	}
 }
