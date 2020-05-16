@@ -13,7 +13,7 @@ struct CollectionViewCellBinder<Cell: NSCollectionViewItem>: ItemBinder where Ce
 	
 	func bind(to ui: NSCollectionView) -> Binding<Cell.Model> {
 		let source = BehaviorSubject(value: [Cell.Model]())
-		let binding = source.bind(to: ui.rx.cells(Cell.self))
+		let binding = source.bind(to: ui.rx.items(Cell.self))
 		return Binding(observer: source, subscription: binding)
 	}
 }

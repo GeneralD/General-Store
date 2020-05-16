@@ -52,3 +52,12 @@ class BrewCaskItem: NSCollectionViewItem {
 	}
 	
 }
+
+extension BrewCaskItem: NibLoadable, Reusable {}
+
+extension BrewCaskItem: Configurable {
+	
+	func configure(with model: BrewCaskItemModel) {
+		
+	}
+}

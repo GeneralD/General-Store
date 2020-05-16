@@ -15,46 +15,46 @@ public extension NSCollectionView {
 	/**
 	Register a NIB-Based `UICollectionViewCell` subclass (conforming to `Reusable` & `NibLoadable`)
 	
-	- parameter cellType: the `UICollectionViewCell` (`Reusable` & `NibLoadable`-conforming) subclass to register
+	- parameter itemType: the `UICollectionViewCell` (`Reusable` & `NibLoadable`-conforming) subclass to register
 	
 	- seealso: `register(_:,forCellWithReuseIdentifier:)`
 	*/
-	final func register<T: NSCollectionViewItem>(cellType: T.Type)
+	final func register<T: NSCollectionViewItem>(itemType: T.Type)
 		where T: Reusable & NibLoadable {
-			register(cellType.nib, forItemWithIdentifier: cellType.reuseIdentifier)
+			register(itemType.nib, forItemWithIdentifier: itemType.reuseIdentifier)
 	}
 	
 	/**
 	Register a Class-Based `UICollectionViewCell` subclass (conforming to `Reusable`)
 	
-	- parameter cellType: the `UICollectionViewCell` (`Reusable`-conforming) subclass to register
+	- parameter itemType: the `UICollectionViewCell` (`Reusable`-conforming) subclass to register
 	
 	- seealso: `register(_:,forCellWithReuseIdentifier:)`
 	*/
-	final func register<T: NSCollectionViewItem>(cellType: T.Type)
+	final func register<T: NSCollectionViewItem>(itemType: T.Type)
 		where T: Reusable {
-			register(cellType.self, forItemWithIdentifier: cellType.reuseIdentifier)
+			register(itemType.self, forItemWithIdentifier: itemType.reuseIdentifier)
 	}
 	
 	/**
 	Returns a reusable `UICollectionViewCell` object for the class inferred by the return-type
 	
 	- parameter indexPath: The index path specifying the location of the cell.
-	- parameter cellType: The cell class to dequeue
+	- parameter itemType: The cell class to dequeue
 	
 	- returns: A `Reusable`, `UICollectionViewCell` instance
 	
-	- note: The `cellType` parameter can generally be omitted and infered by the return type,
+	- note: The `itemType` parameter can generally be omitted and infered by the return type,
 	except when your type is in a variable and cannot be determined at compile time.
 	- seealso: `dequeueReusableCell(withReuseIdentifier:,for:)`
 	*/
-	final func dequeueReusableCell<T: NSCollectionViewItem>(for indexPath: IndexPath, cellType: T.Type = T.self) -> T
+	final func dequeueReusableCell<T: NSCollectionViewItem>(for indexPath: IndexPath, itemType: T.Type = T.self) -> T
 		where T: Reusable {
 			
-			let bareCell = makeItem(withIdentifier: cellType.reuseIdentifier, for: indexPath)
+			let bareCell = makeItem(withIdentifier: itemType.reuseIdentifier, for: indexPath)
 			guard let cell = bareCell as? T else {
 				fatalError(
-					"Failed to dequeue a cell with identifier \(cellType.reuseIdentifier) matching type \(cellType.self). "
+					"Failed to dequeue a cell with identifier \(itemType.reuseIdentifier) matching type \(itemType.self). "
 						+ "Check that the reuseIdentifier is set properly in your XIB/Storyboard "
 						+ "and that you registered the cell beforehand"
 				)

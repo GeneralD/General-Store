@@ -1,5 +1,5 @@
 //
-//  UICollectionView+Cells.swift
+//  NSCollectionView+Items.swift
 //  RxCells
 //
 //  Created by Tomasz Pikć on 11/05/2017.
@@ -11,7 +11,7 @@ import RxCocoa
 //import Reusable
 
 public extension Reactive where Base: NSCollectionView {
-	func cells<S: Sequence, Cell: NSCollectionViewItem, O: ObservableType>(_: Cell.Type)
+	func items<S: Sequence, Cell: NSCollectionViewItem, O: ObservableType>(_: Cell.Type)
 		-> (_ _: O)
 		-> Disposable
 		where O.Element == S, Cell: Reusable & Configurable, Cell.Model == S.Iterator.Element {
@@ -22,7 +22,7 @@ public extension Reactive where Base: NSCollectionView {
 			}
 	}
 	
-	func cells<S: Sequence, Cell: NSCollectionViewItem, O: ObservableType>(_: Cell.Type, withDelegate delegate: Cell.Delegate)
+	func items<S: Sequence, Cell: NSCollectionViewItem, O: ObservableType>(_: Cell.Type, withDelegate delegate: Cell.Delegate)
 		-> (_ _: O)
 		-> Disposable
 		where O.Element == S, Cell: HasDelegate & Reusable & Configurable, Cell.Model == S.Iterator.Element {
@@ -34,7 +34,7 @@ public extension Reactive where Base: NSCollectionView {
 			}
 	}
 	
-	func cells<F: CollectionViewCellFactory, S: Sequence, O: ObservableType>(using factory: F)
+	func items<F: CollectionViewCellFactory, S: Sequence, O: ObservableType>(using factory: F)
 		-> (_ _: O)
 		-> Disposable
 		where O.Element == S, F.Model == S.Iterator.Element {
@@ -47,15 +47,15 @@ public extension Reactive where Base: NSCollectionView {
 			}
 	}
 	
-	func cells<Cell: NSCollectionViewItem>(type: Cell.Type) -> Binding<Cell.Model> where Cell: Reusable & Configurable {
+	func items<Cell: NSCollectionViewItem>(type: Cell.Type) -> Binding<Cell.Model> where Cell: Reusable & Configurable {
 		return CollectionViewCellBinder<Cell>().bind(to: base)
 	}
 	
-	func cells<Cell: NSCollectionViewItem>(type: Cell.Type, withDelegate delegate: Cell.Delegate) -> Binding<Cell.Model> where Cell: HasDelegate & Reusable & Configurable {
+	func items<Cell: NSCollectionViewItem>(type: Cell.Type, withDelegate delegate: Cell.Delegate) -> Binding<Cell.Model> where Cell: HasDelegate & Reusable & Configurable {
 		return CollectionViewCellFactoryBinder(factory: CollectionViewCellWithDelegateFactory<Cell>(delegate: delegate)).bind(to: base)
 	}
 	
-	func cells<Factory: CollectionViewCellFactory>(factory: Factory) -> Binding<Factory.Model> {
+	func items<Factory: CollectionViewCellFactory>(factory: Factory) -> Binding<Factory.Model> {
 		return CollectionViewCellFactoryBinder(factory: factory).bind(to: base)
 	}
 }
