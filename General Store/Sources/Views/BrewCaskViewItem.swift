@@ -16,6 +16,7 @@ class BrewCaskViewItem: NSCollectionViewItem {
 	typealias Output = BrewCaskViewItemModelOutput
 	
 	@IBOutlet weak var nameLabel: NSTextField!
+	@IBOutlet weak var versionLabel: NSTextField!
 	@IBOutlet weak var browseButton: NSButton!
 	@IBOutlet weak var downloadButton: NSButton!
 	@IBOutlet weak var installButton: NSButton!
@@ -53,6 +54,10 @@ extension BrewCaskViewItem: Configurable {
 		
 		output.name
 			.bind(to: nameLabel.rx.text)
+			.disposed(by: disposeBag)
+		
+		output.version
+			.bind(to: versionLabel.rx.text)
 			.disposed(by: disposeBag)
 	}
 }

@@ -37,15 +37,15 @@ class BrewCaskListViewController: NSViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		// Register cell
-		collectionView.register(itemType: BrewCaskViewItem.self)
+		let itemType = BrewCaskViewItem.self
+		collectionView.register(itemType: itemType)
 		
 		//		tableView.rx.itemSelected
 		//			.bind(to: input.itemSelected)
 		//			.disposed(by: disposeBag)
 		
 		output.items
-			.bind(to: collectionView.rx.items(BrewCaskViewItem.self))
+			.bind(to: collectionView.rx.items(itemType))
 			.disposed(by: disposeBag)
 	}
 }

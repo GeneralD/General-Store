@@ -21,6 +21,7 @@ protocol BrewCaskViewItemModelInput {
 
 protocol BrewCaskViewItemModelOutput {
 	var name: Observable<String?> { get }
+	var version: Observable<String?> { get }
 }
 
 final class BrewCaskViewItemModel: BrewCaskViewItemModelInput, BrewCaskViewItemModelOutput {
@@ -33,6 +34,7 @@ final class BrewCaskViewItemModel: BrewCaskViewItemModelInput, BrewCaskViewItemM
 	
 	// MARK: Outputs
 	let name: Observable<String?>
+	let version: Observable<String?>
 	
 	private let disposeBag = DisposeBag()
 	
@@ -52,10 +54,19 @@ final class BrewCaskViewItemModel: BrewCaskViewItemModelInput, BrewCaskViewItemM
 		let _name = BehaviorRelay<String?>(value: nil)
 		self.name = _name.asObservable()
 		
+		let _version = BehaviorRelay<String?>(value: nil)
+		self.version = _version.asObservable()
+		
 		_model
 			.map { $0.name.first }
 			.asDriver(onErrorJustReturn: nil)
 			.drive(_name)
+			.disposed(by: disposeBag)
+		
+		_model
+			.map { $0.version }
+			.asDriver(onErrorJustReturn: nil)
+			.drive(_version)
 			.disposed(by: disposeBag)
 		
 		_browseClick
@@ -67,6 +78,12 @@ final class BrewCaskViewItemModel: BrewCaskViewItemModelInput, BrewCaskViewItemM
 		_downloadClick
 			.flatMap { AF.rx.data(.get, _model.value.url) }
 			.bind(to: userDownloadUrl.appendingPathComponent(_model.value.url.lastPathComponent).rx.write)
+			.disposed(by: disposeBag)
+		
+		let command = "/usr/local/bin/brew"
+		_installClick
+			.flatMap { CommandTask(cmd: command, arguments: "install", _model.value.token).rx.response }
+			.subscribe(onNext: { print($0) })
 			.disposed(by: disposeBag)
 	}
 }
