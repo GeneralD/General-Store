@@ -36,8 +36,7 @@ final class BrewCaskListViewModel: BrewCaskListViewModelInput, BrewCaskListViewM
 		let _items = BehaviorRelay<[BrewCaskItemModel]>(value: [])
 		items = _items.asObservable()
 
-		let provider = MoyaProvider<Homebrew>(stubClosure: { _ in .never }, plugins: [])
-		
+		let provider = MoyaProvider<Homebrew>()
 		_reload
 			.flatMap { provider.rx.request(.caskList) }
 			.filterSuccessfulStatusCodes()

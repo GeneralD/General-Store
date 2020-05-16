@@ -11,29 +11,34 @@ import RxSwift
 import RxRelay
 
 protocol BrewCaskItemModelInput {
-	var selected: AnyObserver<Int> { get }
+	var model: AnyObserver<CaskModel> { get }
 }
 
 protocol BrewCaskItemModelOutput {
-	var title: Observable<String?> { get }
+	var name: Observable<String?> { get }
 }
 
 final class BrewCaskItemModel: BrewCaskItemModelInput, BrewCaskItemModelOutput {
 	
 	// MARK: Inputs
-	let selected: AnyObserver<Int>
+	let model: AnyObserver<CaskModel>
 	
 	// MARK: Outputs
-	let title: Observable<String?>
+	let name: Observable<String?>
 	
 	private let disposeBag = DisposeBag()
 	
 	init(model: CaskModel) {
-		let selectedRelay = PublishRelay<Int>()
-		selected = selectedRelay.asObserver()
-		let titleRelay = BehaviorRelay<String?>(value: nil)
-		title = titleRelay.asObservable()
+		let _model = BehaviorRelay<CaskModel>(value: model)
+		self.model = _model.asObserver()
 		
-		// Do something here...
+		let _name = BehaviorRelay<String?>(value: nil)
+		self.name = _name.asObservable()
+		
+		_model
+			.map { $0.name.first }
+			.asDriver(onErrorJustReturn: nil)
+			.drive(_name)
+			.disposed(by: disposeBag)
 	}
 }

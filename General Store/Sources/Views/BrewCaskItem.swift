@@ -10,41 +10,14 @@ import Cocoa
 import RxSwift
 import RxCocoa
 
-/*
-{
-  "token": "swiftpm-catalog",
-  "name": [
-	"SwiftPM Catalog"
-  ],
-  "homepage": "https://zeezide.com/en/products/swiftpmcatalog/",
-  "url": "https://zeezide.com/download/SwiftPM%20Catalog.app-1.0.3-14.zip",
-  "appcast": "https://zeezide.com/en/products/swiftpmcatalog/",
-  "version": "1.0.3-14",
-  "sha256": "5cdb2639fa3ac906312b2b6004f4fab9acfcab9c62edb2a260565f7bde0cee21",
-  "artifacts": [
-	[
-	  "SwiftPM Catalog.app"
-	]
-  ],
-  "caveats": null,
-  "depends_on": {
-	"macos": {
-	  ">=": [
-		"10.14"
-	  ]
-	}
-  },
-  "conflicts_with": null,
-  "container": null,
-  "auto_updates": null
-}
-*/
 class BrewCaskItem: NSCollectionViewItem {
 	
 	typealias Input = BrewCaskItemModelInput
 	typealias Output = BrewCaskItemModelOutput
 	
-	private let disposeBag = DisposeBag()
+	@IBOutlet weak var nameLabel: NSTextField!
+	
+	private var disposeBag = DisposeBag()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -58,6 +31,13 @@ extension BrewCaskItem: NibLoadable, Reusable {}
 extension BrewCaskItem: Configurable {
 	
 	func configure(with model: BrewCaskItemModel) {
+//		let input: Input = model
+		let output: Output = model
 		
+		disposeBag = DisposeBag()
+		
+		output.name
+			.bind(to: nameLabel.rx.text)
+			.disposed(by: disposeBag)
 	}
 }
