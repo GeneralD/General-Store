@@ -162,6 +162,15 @@
 			path = "User Interfaces";
 			sourceTree = "<group>";
 		};
+		B323666E247040F400274BFE /* CommandTask */ = {
+			isa = PBXGroup;
+			children = (
+				B3467A4F246D421000C03E8A /* CommandTask.swift */,
+				B3467A52246D439000C03E8A /* CommandTask+Rx.swift */,
+			);
+			path = CommandTask;
+			sourceTree = "<group>";
+		};
 		B327DEA0246EC25B00F029B9 /* NSCollectionView+Rx */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +216,7 @@
 		B327DEDC246F854000F029B9 /* InApp Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B323666E247040F400274BFE /* CommandTask */,
 				B327DEBA246F76E500F029B9 /* NSCollectionViewReusable */,
 				B327DEA0246EC25B00F029B9 /* NSCollectionView+Rx */,
 				B327DEC9246F82F000F029B9 /* RxItems */,
@@ -268,7 +278,6 @@
 			children = (
 				B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */,
 				B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */,
-				B3467A52246D439000C03E8A /* CommandTask+Rx.swift */,
 				B323666A247003D000274BFE /* URL+Rx.swift */,
 			);
 			path = Extensions;
@@ -295,13 +304,12 @@
 		B3467A62246D583800C03E8A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B327DEDC246F854000F029B9 /* InApp Frameworks */,
 				B39D3493246FA1A900C07234 /* Models */,
 				B3467A60246D580E00C03E8A /* Views */,
 				B3467A61246D581500C03E8A /* ViewModels */,
 				B3467A51246D435200C03E8A /* Extensions */,
+				B327DEDC246F854000F029B9 /* InApp Frameworks */,
 				B3467A31246D337200C03E8A /* AppDelegate.swift */,
-				B3467A4F246D421000C03E8A /* CommandTask.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
