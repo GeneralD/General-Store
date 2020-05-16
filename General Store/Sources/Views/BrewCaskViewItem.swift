@@ -16,6 +16,9 @@ class BrewCaskViewItem: NSCollectionViewItem {
 	typealias Output = BrewCaskViewItemModelOutput
 	
 	@IBOutlet weak var nameLabel: NSTextField!
+	@IBOutlet weak var browseButton: NSButton!
+	@IBOutlet weak var downloadButton: NSButton!
+	@IBOutlet weak var installButton: NSButton!
 	
 	private var disposeBag = DisposeBag()
 	
@@ -31,10 +34,22 @@ extension BrewCaskViewItem: NibLoadable, Reusable {}
 extension BrewCaskViewItem: Configurable {
 	
 	func configure(with model: BrewCaskViewItemModel) {
-//		let input: Input = model
+		let input: Input = model
 		let output: Output = model
 		
 		disposeBag = DisposeBag()
+		
+		browseButton.rx.tap
+			.bind(to: input.browseClick)
+			.disposed(by: disposeBag)
+		
+		downloadButton.rx.tap
+			.bind(to: input.downloadClick)
+			.disposed(by: disposeBag)
+		
+		installButton.rx.tap
+			.bind(to: input.installClick)
+			.disposed(by: disposeBag)
 		
 		output.name
 			.bind(to: nameLabel.rx.text)

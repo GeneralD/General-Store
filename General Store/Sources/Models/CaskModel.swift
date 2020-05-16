@@ -11,7 +11,7 @@ import Foundation
 struct CaskModel: Codable {
 	let token: String
 	let name: [String]
-	let homepage: String
+	let homepage: URL
 	let url: URL
 	let appcast: String?
 	let version: String

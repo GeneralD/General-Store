@@ -7,6 +7,9 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="BrewCaskViewItem" customModule="General_Store" customModuleProvider="target">
             <connections>
+                <outlet property="browseButton" destination="fwK-pb-45q" id="3I4-YO-LAU"/>
+                <outlet property="downloadButton" destination="c9W-hK-NgI" id="6bW-j7-KlS"/>
+                <outlet property="installButton" destination="ggH-zJ-48s" id="Lmu-56-II9"/>
                 <outlet property="nameLabel" destination="kyx-mU-t8K" id="YIk-oA-scC"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
@@ -25,11 +28,50 @@
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MAJ-6J-ebQ">
+                    <rect key="frame" x="10" y="214" width="460" height="22"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fwK-pb-45q">
+                            <rect key="frame" x="0.0" y="-1" width="148" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title="􀎟 Browse" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h9D-kN-Ge1">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" size="13" name="SFCompactDisplay-Regular"/>
+                            </buttonCell>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-hK-NgI">
+                            <rect key="frame" x="156" y="-1" width="148" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title="􀈨 Download" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nSd-pv-Ftk">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" size="13" name="SFCompactDisplay-Regular"/>
+                            </buttonCell>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ggH-zJ-48s">
+                            <rect key="frame" x="312" y="-1" width="148" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title="􀐛 Install" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E9O-JB-X7b">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" size="13" name="SFCompactDisplay-Regular"/>
+                            </buttonCell>
+                        </button>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
             </subviews>
             <constraints>
                 <constraint firstItem="kyx-mU-t8K" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="5xB-ip-Spd"/>
                 <constraint firstItem="kyx-mU-t8K" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="9sG-ni-OEW"/>
+                <constraint firstAttribute="trailing" secondItem="MAJ-6J-ebQ" secondAttribute="trailing" constant="10" id="Lyh-RC-JZD"/>
+                <constraint firstItem="MAJ-6J-ebQ" firstAttribute="top" secondItem="kyx-mU-t8K" secondAttribute="bottom" constant="10" id="bUi-hM-hdp"/>
                 <constraint firstAttribute="trailing" secondItem="kyx-mU-t8K" secondAttribute="trailing" constant="10" id="jlE-xo-y7T"/>
+                <constraint firstItem="MAJ-6J-ebQ" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="wOS-RG-Lnd"/>
             </constraints>
             <point key="canvasLocation" x="140" y="154"/>
         </customView>

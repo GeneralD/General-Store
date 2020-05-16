@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		641714789F153510B2352457 /* Pods_General_StoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0B48700A220B55A3F08002 /* Pods_General_StoreTests.framework */; };
+		B323666B247003D000274BFE /* URL+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B323666A247003D000274BFE /* URL+Rx.swift */; };
 		B327DE91246EA9A700F029B9 /* NSCollectionView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE90246EA9A700F029B9 /* NSCollectionView+Rx.swift */; };
 		B327DE93246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE92246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift */; };
 		B327DE95246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE94246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift */; };
@@ -64,6 +65,7 @@
 		288D5C28CF8D2916B1FE68CC /* Pods-General Store.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General Store.release.xcconfig"; path = "Target Support Files/Pods-General Store/Pods-General Store.release.xcconfig"; sourceTree = "<group>"; };
 		7BBBD4944049F0A2D6FDCE9C /* Pods-General StoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General StoreTests.debug.xcconfig"; path = "Target Support Files/Pods-General StoreTests/Pods-General StoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F93A2CFEB66613324C23D6F /* Pods-General StoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General StoreTests.release.xcconfig"; path = "Target Support Files/Pods-General StoreTests/Pods-General StoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		B323666A247003D000274BFE /* URL+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Rx.swift"; sourceTree = "<group>"; };
 		B327DE90246EA9A700F029B9 /* NSCollectionView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Rx.swift"; sourceTree = "<group>"; };
 		B327DE92246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewReactiveArrayDataSource.swift; sourceTree = "<group>"; };
 		B327DE94246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewDataSourceType.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */,
 				B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */,
 				B3467A52246D439000C03E8A /* CommandTask+Rx.swift */,
+				B323666A247003D000274BFE /* URL+Rx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				B327DEC5246F788500F029B9 /* NSCollectionView+Reusable.swift in Sources */,
 				B327DE95246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift in Sources */,
 				B3467A55246D47AD00C03E8A /* BrewCaskListViewModel.swift in Sources */,
+				B323666B247003D000274BFE /* URL+Rx.swift in Sources */,
 				B327DEDB246F831700F029B9 /* NSCollectionView+Items.swift in Sources */,
 				B327DED7246F831700F029B9 /* Configurable.swift in Sources */,
 				B3467A50246D421000C03E8A /* CommandTask.swift in Sources */,
