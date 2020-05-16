@@ -9,10 +9,7 @@
 import Foundation
 import RxSwift
 import RxRelay
-import RxAlamofire
-import Alamofire
-import SwiftyJSON
-import Curry
+import Moya
 
 protocol BrewCaskListViewModelInput {
 	var reload: AnyObserver<()> { get }
@@ -38,11 +35,14 @@ final class BrewCaskListViewModel: BrewCaskListViewModelInput, BrewCaskListViewM
 		
 		let _items = BehaviorRelay<[BrewCaskItemModel]>(value: [])
 		items = _items.asObservable()
+
+		let provider = MoyaProvider<Homebrew>(stubClosure: { _ in .never }, plugins: [])
 		
 		_reload
-			.flatMap { RxAlamofire.data(.get, "https://formulae.brew.sh/api/cask.json") }
-			.compactMap { try? JSON(data: $0) }
-			.map { $0.arrayValue.map(BrewCaskItemModel.init(json: )) }
+			.flatMap { provider.rx.request(.caskList) }
+			.filterSuccessfulStatusCodes()
+			.map([CaskModel].self)
+			.map { $0.map(BrewCaskItemModel.init(model: )) }
 			.bind(to: _items)
 			.disposed(by: disposeBag)
 	}

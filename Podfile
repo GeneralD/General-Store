@@ -7,11 +7,8 @@ target 'General Store' do
 	pod 'RxCocoa'
 	pod 'RxOptional'
 	pod 'RxViewController'
-	pod 'RxAlamofire'
-	
-	pod 'SwiftyJSON'
-	pod 'Curry'
-	
+	pod 'Moya/RxSwift'
+
 	target 'General StoreTests' do
 		inherit! :search_paths
 	end

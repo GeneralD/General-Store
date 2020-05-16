@@ -9,7 +9,6 @@
 import Foundation
 import RxSwift
 import RxRelay
-import SwiftyJSON
 
 protocol BrewCaskItemModelInput {
 	var selected: AnyObserver<Int> { get }
@@ -29,7 +28,7 @@ final class BrewCaskItemModel: BrewCaskItemModelInput, BrewCaskItemModelOutput {
 	
 	private let disposeBag = DisposeBag()
 	
-	init(json: JSON) {
+	init(model: CaskModel) {
 		let selectedRelay = PublishRelay<Int>()
 		selected = selectedRelay.asObserver()
 		let titleRelay = BehaviorRelay<String?>(value: nil)

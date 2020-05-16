@@ -29,6 +29,7 @@
 		B327DED9246F831700F029B9 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DED0246F831600F029B9 /* Binder.swift */; };
 		B327DEDA246F831700F029B9 /* HasDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DED1246F831600F029B9 /* HasDelegate.swift */; };
 		B327DEDB246F831700F029B9 /* NSCollectionView+Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DED2246F831600F029B9 /* NSCollectionView+Items.swift */; };
+		B327DEDF246F9DC200F029B9 /* cask.json in Resources */ = {isa = PBXBuildFile; fileRef = B327DEDE246F9DC200F029B9 /* cask.json */; };
 		B3467A32246D337200C03E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A31246D337200C03E8A /* AppDelegate.swift */; };
 		B3467A34246D337200C03E8A /* BrewCaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A33246D337200C03E8A /* BrewCaskListViewController.swift */; };
 		B3467A36246D337500C03E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3467A35246D337500C03E8A /* Assets.xcassets */; };
@@ -42,6 +43,8 @@
 		B3467A5C246D53F700C03E8A /* BrewCaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A5A246D53F700C03E8A /* BrewCaskItem.swift */; };
 		B3467A5D246D53F700C03E8A /* BrewCaskItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3467A5B246D53F700C03E8A /* BrewCaskItem.xib */; };
 		B3467A5F246D542300C03E8A /* BrewCaskItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A5E246D542300C03E8A /* BrewCaskItemModel.swift */; };
+		B39D3495246FA1C100C07234 /* Homebrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D3494246FA1C100C07234 /* Homebrew.swift */; };
+		B39D3497246FA55C00C07234 /* CaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D3496246FA55C00C07234 /* CaskModel.swift */; };
 		BFD47C1C148F79E721F161C0 /* Pods_General_Store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B5711FF36A58C5353BFC86 /* Pods_General_Store.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +85,7 @@
 		B327DED0246F831600F029B9 /* Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
 		B327DED1246F831600F029B9 /* HasDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasDelegate.swift; sourceTree = "<group>"; };
 		B327DED2246F831600F029B9 /* NSCollectionView+Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Items.swift"; sourceTree = "<group>"; };
+		B327DEDE246F9DC200F029B9 /* cask.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cask.json; sourceTree = "<group>"; };
 		B3467A2E246D337200C03E8A /* General Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "General Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3467A31246D337200C03E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3467A33246D337200C03E8A /* BrewCaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskListViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 		B3467A5A246D53F700C03E8A /* BrewCaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskItem.swift; sourceTree = "<group>"; };
 		B3467A5B246D53F700C03E8A /* BrewCaskItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrewCaskItem.xib; sourceTree = "<group>"; };
 		B3467A5E246D542300C03E8A /* BrewCaskItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskItemModel.swift; sourceTree = "<group>"; };
+		B39D3494246FA1C100C07234 /* Homebrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homebrew.swift; sourceTree = "<group>"; };
+		B39D3496246FA55C00C07234 /* CaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskModel.swift; sourceTree = "<group>"; };
 		C34D95A76C20C691A9254F00 /* Pods-General Store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General Store.debug.xcconfig"; path = "Target Support Files/Pods-General Store/Pods-General Store.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +201,14 @@
 			path = "InApp Frameworks";
 			sourceTree = "<group>";
 		};
+		B327DEE0246F9DCD00F029B9 /* Sample Data */ = {
+			isa = PBXGroup;
+			children = (
+				B327DEDE246F9DC200F029B9 /* cask.json */,
+			);
+			path = "Sample Data";
+			sourceTree = "<group>";
+		};
 		B3467A25246D337200C03E8A = {
 			isa = PBXGroup;
 			children = (
@@ -268,8 +282,9 @@
 			isa = PBXGroup;
 			children = (
 				B327DEDC246F854000F029B9 /* InApp Frameworks */,
-				B3467A61246D581500C03E8A /* ViewModels */,
+				B39D3493246FA1A900C07234 /* Models */,
 				B3467A60246D580E00C03E8A /* Views */,
+				B3467A61246D581500C03E8A /* ViewModels */,
 				B3467A51246D435200C03E8A /* Extensions */,
 				B3467A31246D337200C03E8A /* AppDelegate.swift */,
 				B3467A4F246D421000C03E8A /* CommandTask.swift */,
@@ -280,10 +295,20 @@
 		B3467A63246D584700C03E8A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B327DEE0246F9DCD00F029B9 /* Sample Data */,
 				B3467A37246D337500C03E8A /* Main.storyboard */,
 				B3467A35246D337500C03E8A /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B39D3493246FA1A900C07234 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B39D3494246FA1C100C07234 /* Homebrew.swift */,
+				B39D3496246FA55C00C07234 /* CaskModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +398,7 @@
 				B3467A36246D337500C03E8A /* Assets.xcassets in Resources */,
 				B3467A39246D337500C03E8A /* Main.storyboard in Resources */,
 				B3467A5D246D53F700C03E8A /* BrewCaskItem.xib in Resources */,
+				B327DEDF246F9DC200F029B9 /* cask.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,15 +417,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-General StoreTests-checkManifestLockResult.txt",
 			);
@@ -430,15 +452,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-General Store-checkManifestLockResult.txt",
 			);
@@ -479,9 +497,11 @@
 				B327DEDA246F831700F029B9 /* HasDelegate.swift in Sources */,
 				B327DED4246F831700F029B9 /* Binding.swift in Sources */,
 				B327DED9246F831700F029B9 /* Binder.swift in Sources */,
+				B39D3495246FA1C100C07234 /* Homebrew.swift in Sources */,
 				B327DED5246F831700F029B9 /* CollectionViewCellsBinder.swift in Sources */,
 				B3467A57246D48BB00C03E8A /* ObserverConvertible.swift in Sources */,
 				B327DED8246F831700F029B9 /* CollectionViewCellFactory.swift in Sources */,
+				B39D3497246FA55C00C07234 /* CaskModel.swift in Sources */,
 				B3467A59246D4BBC00C03E8A /* ObservableTypeExtension.swift in Sources */,
 				B327DEBD246F778900F029B9 /* StoryboardSceneBased.swift in Sources */,
 			);
