@@ -21,6 +21,15 @@
 		B327DEC5246F788500F029B9 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEC0246F788400F029B9 /* UICollectionView+Reusable.swift */; };
 		B327DEC6246F788500F029B9 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEC1246F788400F029B9 /* NibLoadable.swift */; };
 		B327DEC7246F788500F029B9 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEC2246F788500F029B9 /* Reusable.swift */; };
+		B327DED3246F831700F029B9 /* CollectionViewCellWithDelegateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DECA246F831600F029B9 /* CollectionViewCellWithDelegateFactory.swift */; };
+		B327DED4246F831700F029B9 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DECB246F831600F029B9 /* Binding.swift */; };
+		B327DED5246F831700F029B9 /* CollectionViewCellsBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DECC246F831600F029B9 /* CollectionViewCellsBinder.swift */; };
+		B327DED6246F831700F029B9 /* CollectionViewCellFactoryBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DECD246F831600F029B9 /* CollectionViewCellFactoryBinder.swift */; };
+		B327DED7246F831700F029B9 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DECE246F831600F029B9 /* Configurable.swift */; };
+		B327DED8246F831700F029B9 /* CollectionViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DECF246F831600F029B9 /* CollectionViewCellFactory.swift */; };
+		B327DED9246F831700F029B9 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DED0246F831600F029B9 /* Binder.swift */; };
+		B327DEDA246F831700F029B9 /* HasDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DED1246F831600F029B9 /* HasDelegate.swift */; };
+		B327DEDB246F831700F029B9 /* UICollectionView+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DED2246F831600F029B9 /* UICollectionView+Cells.swift */; };
 		B3467A32246D337200C03E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A31246D337200C03E8A /* AppDelegate.swift */; };
 		B3467A34246D337200C03E8A /* BrewCaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A33246D337200C03E8A /* BrewCaskListViewController.swift */; };
 		B3467A36246D337500C03E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3467A35246D337500C03E8A /* Assets.xcassets */; };
@@ -66,6 +75,15 @@
 		B327DEC0246F788400F029B9 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		B327DEC1246F788400F029B9 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		B327DEC2246F788500F029B9 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		B327DECA246F831600F029B9 /* CollectionViewCellWithDelegateFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellWithDelegateFactory.swift; sourceTree = "<group>"; };
+		B327DECB246F831600F029B9 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		B327DECC246F831600F029B9 /* CollectionViewCellsBinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellsBinder.swift; sourceTree = "<group>"; };
+		B327DECD246F831600F029B9 /* CollectionViewCellFactoryBinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellFactoryBinder.swift; sourceTree = "<group>"; };
+		B327DECE246F831600F029B9 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		B327DECF246F831600F029B9 /* CollectionViewCellFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellFactory.swift; sourceTree = "<group>"; };
+		B327DED0246F831600F029B9 /* Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
+		B327DED1246F831600F029B9 /* HasDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasDelegate.swift; sourceTree = "<group>"; };
+		B327DED2246F831600F029B9 /* UICollectionView+Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Cells.swift"; sourceTree = "<group>"; };
 		B3467A2E246D337200C03E8A /* General Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "General Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3467A31246D337200C03E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3467A33246D337200C03E8A /* BrewCaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskListViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +172,32 @@
 			path = NSCollectionViewReusable;
 			sourceTree = "<group>";
 		};
+		B327DEC9246F82F000F029B9 /* RxItems */ = {
+			isa = PBXGroup;
+			children = (
+				B327DED0246F831600F029B9 /* Binder.swift */,
+				B327DECB246F831600F029B9 /* Binding.swift */,
+				B327DECF246F831600F029B9 /* CollectionViewCellFactory.swift */,
+				B327DECD246F831600F029B9 /* CollectionViewCellFactoryBinder.swift */,
+				B327DECC246F831600F029B9 /* CollectionViewCellsBinder.swift */,
+				B327DECA246F831600F029B9 /* CollectionViewCellWithDelegateFactory.swift */,
+				B327DECE246F831600F029B9 /* Configurable.swift */,
+				B327DED1246F831600F029B9 /* HasDelegate.swift */,
+				B327DED2246F831600F029B9 /* UICollectionView+Cells.swift */,
+			);
+			path = RxItems;
+			sourceTree = "<group>";
+		};
+		B327DEDC246F854000F029B9 /* InApp Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B327DEBA246F76E500F029B9 /* NSCollectionViewReusable */,
+				B327DEA0246EC25B00F029B9 /* NSCollectionView+Rx */,
+				B327DEC9246F82F000F029B9 /* RxItems */,
+			);
+			path = "InApp Frameworks";
+			sourceTree = "<group>";
+		};
 		B3467A25246D337200C03E8A = {
 			isa = PBXGroup;
 			children = (
@@ -197,8 +241,6 @@
 		B3467A51246D435200C03E8A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B327DEBA246F76E500F029B9 /* NSCollectionViewReusable */,
-				B327DEA0246EC25B00F029B9 /* NSCollectionView+Rx */,
 				B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */,
 				B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */,
 				B3467A52246D439000C03E8A /* CommandTask+Rx.swift */,
@@ -228,6 +270,7 @@
 		B3467A62246D583800C03E8A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B327DEDC246F854000F029B9 /* InApp Frameworks */,
 				B3467A61246D581500C03E8A /* ViewModels */,
 				B3467A60246D580E00C03E8A /* Views */,
 				B3467A51246D435200C03E8A /* Extensions */,
@@ -414,10 +457,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B327DED3246F831700F029B9 /* CollectionViewCellWithDelegateFactory.swift in Sources */,
+				B327DED6246F831700F029B9 /* CollectionViewCellFactoryBinder.swift in Sources */,
 				B3467A5F246D542300C03E8A /* BrewCaskItemModel.swift in Sources */,
 				B327DEC5246F788500F029B9 /* UICollectionView+Reusable.swift in Sources */,
 				B327DE95246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift in Sources */,
 				B3467A55246D47AD00C03E8A /* BrewCaskListViewModel.swift in Sources */,
+				B327DEDB246F831700F029B9 /* UICollectionView+Cells.swift in Sources */,
+				B327DED7246F831700F029B9 /* Configurable.swift in Sources */,
 				B3467A50246D421000C03E8A /* CommandTask.swift in Sources */,
 				B327DE9B246EB4A500F029B9 /* DelegateProxyType.swift in Sources */,
 				B3467A34246D337200C03E8A /* BrewCaskListViewController.swift in Sources */,
@@ -432,8 +479,13 @@
 				B3467A5C246D53F700C03E8A /* BrewCaskItem.swift in Sources */,
 				B327DE97246EB03300F029B9 /* RxCocoa.swift in Sources */,
 				B327DE91246EA9A700F029B9 /* NSCollectionView+Rx.swift in Sources */,
+				B327DEDA246F831700F029B9 /* HasDelegate.swift in Sources */,
+				B327DED4246F831700F029B9 /* Binding.swift in Sources */,
+				B327DED9246F831700F029B9 /* Binder.swift in Sources */,
 				B327DEB9246ED4D200F029B9 /* NSCollectionView+RegisterItem.swift in Sources */,
+				B327DED5246F831700F029B9 /* CollectionViewCellsBinder.swift in Sources */,
 				B3467A57246D48BB00C03E8A /* ObserverConvertible.swift in Sources */,
+				B327DED8246F831700F029B9 /* CollectionViewCellFactory.swift in Sources */,
 				B3467A59246D4BBC00C03E8A /* ObservableTypeExtension.swift in Sources */,
 				B327DEBD246F778900F029B9 /* StoryboardSceneBased.swift in Sources */,
 			);
