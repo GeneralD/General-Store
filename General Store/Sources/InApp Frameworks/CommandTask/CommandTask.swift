@@ -20,7 +20,7 @@ class CommandTask: Equatable {
 	private var outputObserver: ((String) -> ())?
 	private var completionHandler: (() -> ())?
 	
-	init(launchPath: String = "/bin/sh", arguments: String...) {
+	init(launchPath: String, arguments: String...) {
 		task.launchPath = launchPath
 		task.arguments = arguments
 		task.standardInput = inputPipe

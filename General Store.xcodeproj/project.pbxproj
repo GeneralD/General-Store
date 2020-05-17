@@ -42,7 +42,7 @@
 		B3467A34246D337200C03E8A /* CaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A33246D337200C03E8A /* CaskListViewController.swift */; };
 		B3467A36246D337500C03E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3467A35246D337500C03E8A /* Assets.xcassets */; };
 		B3467A39246D337500C03E8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3467A37246D337500C03E8A /* Main.storyboard */; };
-		B3467A45246D337500C03E8A /* General_StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A44246D337500C03E8A /* General_StoreTests.swift */; };
+		B3467A45246D337500C03E8A /* General_StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A44246D337500C03E8A /* General_StoreSpec.swift */; };
 		B3467A50246D421000C03E8A /* CommandTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A4F246D421000C03E8A /* CommandTask.swift */; };
 		B3467A53246D439000C03E8A /* CommandTask+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A52246D439000C03E8A /* CommandTask+Rx.swift */; };
 		B3467A55246D47AD00C03E8A /* CaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A54246D47AD00C03E8A /* CaskListViewModel.swift */; };
@@ -110,7 +110,7 @@
 		B3467A3A246D337500C03E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3467A3B246D337500C03E8A /* General_Store.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = General_Store.entitlements; sourceTree = "<group>"; };
 		B3467A40246D337500C03E8A /* General StoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "General StoreTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3467A44246D337500C03E8A /* General_StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General_StoreTests.swift; sourceTree = "<group>"; };
+		B3467A44246D337500C03E8A /* General_StoreSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General_StoreSpec.swift; sourceTree = "<group>"; };
 		B3467A46246D337500C03E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3467A4F246D421000C03E8A /* CommandTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTask.swift; sourceTree = "<group>"; };
 		B3467A52246D439000C03E8A /* CommandTask+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommandTask+Rx.swift"; sourceTree = "<group>"; };
@@ -280,7 +280,7 @@
 		B3467A43246D337500C03E8A /* General StoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				B3467A44246D337500C03E8A /* General_StoreTests.swift */,
+				B3467A44246D337500C03E8A /* General_StoreSpec.swift */,
 				B3467A46246D337500C03E8A /* Info.plist */,
 			);
 			path = "General StoreTests";
@@ -577,7 +577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3467A45246D337500C03E8A /* General_StoreTests.swift in Sources */,
+				B3467A45246D337500C03E8A /* General_StoreSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
