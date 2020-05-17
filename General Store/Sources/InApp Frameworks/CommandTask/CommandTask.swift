@@ -20,8 +20,8 @@ class CommandTask: Equatable {
 	private var outputObserver: ((String) -> ())?
 	private var completionHandler: (() -> ())?
 	
-	init(cmd: String, arguments: String...) {
-		task.launchPath = cmd
+	init(launchPath: String = "/bin/sh", arguments: String...) {
+		task.launchPath = launchPath
 		task.arguments = arguments
 		task.standardInput = inputPipe
 		task.standardOutput = outputPipe
@@ -64,7 +64,7 @@ class CommandTask: Equatable {
 			let dataHandler: (Data) -> () = { data in
 				if let outStr = NSString(data: data, encoding: CommandTask.ENCODING.rawValue) {
 					let s = outStr as String
-					if s != "" {
+					if !s.isEmpty {
 						self.outputObserver?(s)
 					}
 				}

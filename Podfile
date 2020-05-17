@@ -12,5 +12,6 @@ target 'General Store' do
 	
 	target 'General StoreTests' do
 		inherit! :search_paths
+		pod 'RxBlocking'
 	end
 end

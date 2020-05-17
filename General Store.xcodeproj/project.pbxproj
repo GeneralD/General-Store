@@ -381,6 +381,7 @@
 				B3467A3C246D337500C03E8A /* Sources */,
 				B3467A3D246D337500C03E8A /* Frameworks */,
 				B3467A3E246D337500C03E8A /* Resources */,
+				B82F9BE573C746CC36752C17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -487,6 +488,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-General Store/Pods-General Store-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B82F9BE573C746CC36752C17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-General StoreTests/Pods-General StoreTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-General StoreTests/Pods-General StoreTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-General StoreTests/Pods-General StoreTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D9A0C3863A1D3F20AE07931F /* [CP] Check Pods Manifest.lock */ = {
