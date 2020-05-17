@@ -779,11 +779,47 @@
         <!-- 􀆔 Tools-->
         <scene sceneID="nPx-m4-Ofc">
             <objects>
-                <viewController title=" 􀆔 Tools" id="qgc-gB-qM6" sceneMemberID="viewController">
+                <viewController title=" 􀆔 Tools" id="qgc-gB-qM6" customClass="FormulaListViewController" customModule="General_Store" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="MSx-be-T7Z">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVG-os-PDV">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="w82-Qi-gz8">
+                                    <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView id="UXV-wy-F83">
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="158"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <collectionViewGridLayout key="collectionViewLayout" id="oVx-OJ-8RX">
+                                                <size key="minimumItemSize" width="320" height="80"/>
+                                            </collectionViewGridLayout>
+                                            <color key="primaryBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </collectionView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="9qw-KX-kGj">
+                                    <rect key="frame" x="1" y="144" width="233" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="wHO-p4-RgN">
+                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QVG-os-PDV" secondAttribute="bottom" id="EsW-H9-1rU"/>
+                            <constraint firstItem="QVG-os-PDV" firstAttribute="top" secondItem="MSx-be-T7Z" secondAttribute="top" id="XhS-UO-Kae"/>
+                            <constraint firstAttribute="trailing" secondItem="QVG-os-PDV" secondAttribute="trailing" id="jFc-Fb-1Wo"/>
+                            <constraint firstItem="QVG-os-PDV" firstAttribute="leading" secondItem="MSx-be-T7Z" secondAttribute="leading" id="mHC-Qd-hWU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="UXV-wy-F83" id="y7e-PY-ETm"/>
+                    </connections>
                 </viewController>
                 <customObject id="Qki-3d-15P" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

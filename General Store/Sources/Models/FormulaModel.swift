@@ -35,11 +35,31 @@ struct FormulaModel: Codable {
 			let url: URL
 			let tag: String?
 			let revision: String?
+			
+			private enum CodingKeys: String, CodingKey {
+				case url
+				case tag
+				case revision
+			}
+			
+			init(from decoder: Decoder) throws {
+				let values = try decoder.container(keyedBy: CodingKeys.self)
+				url = try values.decode(URL.self, forKey: .url)
+				tag = try? values.decodeIfPresent(String.self, forKey: .tag)
+				revision = try? values.decodeIfPresent(String.self, forKey: .revision) ?? values.decodeIfPresent(Int.self, forKey: .revision)?.description
+			}
+			
+			func encode(to encoder: Encoder) throws {
+				var container = encoder.container(keyedBy: CodingKeys.self)
+				try container.encode(url, forKey: .url)
+				try container.encode(tag, forKey: .tag)
+				try container.encode(revision, forKey: .revision)
+			}
 		}
 	}
 	
 	struct Bottle: Codable {
-		let stable: Channel
+		let stable: Channel?
 		let devel: Channel?
 		let head: Channel?
 		

@@ -11,6 +11,11 @@
 		B323666B247003D000274BFE /* URL+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B323666A247003D000274BFE /* URL+Rx.swift */; };
 		B323666D24703D8D00274BFE /* formula.json in Resources */ = {isa = PBXBuildFile; fileRef = B323666C24703D8D00274BFE /* formula.json */; };
 		B3236670247052C200274BFE /* FormulaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B323666F247052C200274BFE /* FormulaModel.swift */; };
+		B323667424711F4300274BFE /* FormulaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B323667324711F4300274BFE /* FormulaListViewController.swift */; };
+		B323667624711FE200274BFE /* FormulaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B323667524711FE200274BFE /* FormulaListViewModel.swift */; };
+		B32366782471219200274BFE /* FormulaItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32366772471219200274BFE /* FormulaItemViewController.swift */; };
+		B323667A247121F500274BFE /* FormulaItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3236679247121F500274BFE /* FormulaItemViewModel.swift */; };
+		B323667E2471253B00274BFE /* FormulaItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B323667D2471252F00274BFE /* FormulaItemViewController.xib */; };
 		B327DE91246EA9A700F029B9 /* NSCollectionView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE90246EA9A700F029B9 /* NSCollectionView+Rx.swift */; };
 		B327DE93246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE92246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift */; };
 		B327DE95246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE94246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift */; };
@@ -70,6 +75,11 @@
 		B323666A247003D000274BFE /* URL+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Rx.swift"; sourceTree = "<group>"; };
 		B323666C24703D8D00274BFE /* formula.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = formula.json; sourceTree = "<group>"; };
 		B323666F247052C200274BFE /* FormulaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaModel.swift; sourceTree = "<group>"; };
+		B323667324711F4300274BFE /* FormulaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaListViewController.swift; sourceTree = "<group>"; };
+		B323667524711FE200274BFE /* FormulaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaListViewModel.swift; sourceTree = "<group>"; };
+		B32366772471219200274BFE /* FormulaItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaItemViewController.swift; sourceTree = "<group>"; };
+		B3236679247121F500274BFE /* FormulaItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaItemViewModel.swift; sourceTree = "<group>"; };
+		B323667D2471252F00274BFE /* FormulaItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormulaItemViewController.xib; sourceTree = "<group>"; };
 		B327DE90246EA9A700F029B9 /* NSCollectionView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Rx.swift"; sourceTree = "<group>"; };
 		B327DE92246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewReactiveArrayDataSource.swift; sourceTree = "<group>"; };
 		B327DE94246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewDataSourceType.swift; sourceTree = "<group>"; };
@@ -160,6 +170,7 @@
 			children = (
 				B3467A37246D337500C03E8A /* Main.storyboard */,
 				B3467A5B246D53F700C03E8A /* CaskItemViewController.xib */,
+				B323667D2471252F00274BFE /* FormulaItemViewController.xib */,
 			);
 			path = "User Interfaces";
 			sourceTree = "<group>";
@@ -290,6 +301,8 @@
 			children = (
 				B3467A33246D337200C03E8A /* CaskListViewController.swift */,
 				B3467A5A246D53F700C03E8A /* CaskItemViewController.swift */,
+				B323667324711F4300274BFE /* FormulaListViewController.swift */,
+				B32366772471219200274BFE /* FormulaItemViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,6 +312,8 @@
 			children = (
 				B3467A54246D47AD00C03E8A /* CaskListViewModel.swift */,
 				B3467A5E246D542300C03E8A /* CaskItemViewModel.swift */,
+				B323667524711FE200274BFE /* FormulaListViewModel.swift */,
+				B3236679247121F500274BFE /* FormulaItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -422,6 +437,7 @@
 			files = (
 				B3467A36246D337500C03E8A /* Assets.xcassets in Resources */,
 				B3467A39246D337500C03E8A /* Main.storyboard in Resources */,
+				B323667E2471253B00274BFE /* FormulaItemViewController.xib in Resources */,
 				B3467A5D246D53F700C03E8A /* CaskItemViewController.xib in Resources */,
 				B327DEDF246F9DC200F029B9 /* cask.json in Resources */,
 				B323666D24703D8D00274BFE /* formula.json in Resources */,
@@ -500,6 +516,7 @@
 			files = (
 				B327DED3246F831700F029B9 /* CollectionViewCellWithDelegateFactory.swift in Sources */,
 				B327DED6246F831700F029B9 /* CollectionViewCellFactoryBinder.swift in Sources */,
+				B323667424711F4300274BFE /* FormulaListViewController.swift in Sources */,
 				B3467A5F246D542300C03E8A /* CaskItemViewModel.swift in Sources */,
 				B327DEC5246F788500F029B9 /* NSCollectionView+Reusable.swift in Sources */,
 				B327DE95246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift in Sources */,
@@ -528,9 +545,12 @@
 				B39D3495246FA1C100C07234 /* Homebrew.swift in Sources */,
 				B327DED5246F831700F029B9 /* CollectionViewCellsBinder.swift in Sources */,
 				B3467A57246D48BB00C03E8A /* ObserverConvertible.swift in Sources */,
+				B323667624711FE200274BFE /* FormulaListViewModel.swift in Sources */,
+				B323667A247121F500274BFE /* FormulaItemViewModel.swift in Sources */,
 				B327DED8246F831700F029B9 /* CollectionViewCellFactory.swift in Sources */,
 				B39D3497246FA55C00C07234 /* CaskModel.swift in Sources */,
 				B3467A59246D4BBC00C03E8A /* ObservableTypeExtension.swift in Sources */,
+				B32366782471219200274BFE /* FormulaItemViewController.swift in Sources */,
 				B327DEBD246F778900F029B9 /* StoryboardSceneBased.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

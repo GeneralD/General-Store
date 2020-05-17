@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FormulaItemViewController" customModule="General_Store">
+            <connections>
+                <outlet property="browseButton" destination="fwK-pb-45q" id="G8g-Ay-jeM"/>
+                <outlet property="downloadButton" destination="c9W-hK-NgI" id="K42-Qb-xOa"/>
+                <outlet property="installButton" destination="ggH-zJ-48s" id="UcT-Pw-vZc"/>
+                <outlet property="nameLabel" destination="kyx-mU-t8K" id="m8h-xp-tbJ"/>
+                <outlet property="versionLabel" destination="oKZ-Ln-eUg" id="gqY-p2-vVW"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MAJ-6J-ebQ">
+                    <rect key="frame" x="10" y="214" width="460" height="22"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fwK-pb-45q">
+                            <rect key="frame" x="0.0" y="-1" width="148" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title="􀎟 Browse" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h9D-kN-Ge1">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" size="13" name="SFCompactDisplay-Regular"/>
+                            </buttonCell>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-hK-NgI">
+                            <rect key="frame" x="156" y="-1" width="148" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title="􀈨 Download" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nSd-pv-Ftk">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" size="13" name="SFCompactDisplay-Regular"/>
+                            </buttonCell>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ggH-zJ-48s">
+                            <rect key="frame" x="312" y="-1" width="148" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title="􀐛 Install" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E9O-JB-X7b">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" size="13" name="SFCompactDisplay-Regular"/>
+                            </buttonCell>
+                        </button>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Ci5-oW-YC7">
+                    <rect key="frame" x="0.0" y="-2" width="480" height="5"/>
+                </box>
+                <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="LVf-HK-Tcr">
+                    <rect key="frame" x="477" y="0.0" width="5" height="272"/>
+                </box>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="WlO-gr-wrE">
+                    <rect key="frame" x="10" y="246" width="459" height="16"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kyx-mU-t8K">
+                            <rect key="frame" x="-2" y="0.0" width="43" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Xcode" id="EQH-GA-dIb">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oKZ-Ln-eUg">
+                            <rect key="frame" x="424" y="0.0" width="37" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="11.4.1" id="Ocl-5C-5Mi">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="oKZ-Ln-eUg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kyx-mU-t8K" secondAttribute="trailing" constant="10" id="4BF-RQ-d9H"/>
+                        <constraint firstItem="oKZ-Ln-eUg" firstAttribute="top" secondItem="WlO-gr-wrE" secondAttribute="top" id="7P7-67-dJ3"/>
+                        <constraint firstItem="kyx-mU-t8K" firstAttribute="leading" secondItem="WlO-gr-wrE" secondAttribute="leading" id="7b3-pL-2pg"/>
+                        <constraint firstAttribute="trailing" secondItem="oKZ-Ln-eUg" secondAttribute="trailing" id="Ebg-OJ-bpD"/>
+                        <constraint firstAttribute="bottom" secondItem="oKZ-Ln-eUg" secondAttribute="bottom" id="Jx6-pV-mEG"/>
+                        <constraint firstItem="kyx-mU-t8K" firstAttribute="top" secondItem="WlO-gr-wrE" secondAttribute="top" id="KeK-3w-MUJ"/>
+                        <constraint firstAttribute="bottom" secondItem="kyx-mU-t8K" secondAttribute="bottom" id="QYd-hx-mgE"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="WlO-gr-wrE" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="4zO-yA-giC"/>
+                <constraint firstAttribute="bottom" secondItem="LVf-HK-Tcr" secondAttribute="bottom" id="5dd-aC-ztn"/>
+                <constraint firstAttribute="trailing" secondItem="MAJ-6J-ebQ" secondAttribute="trailing" constant="10" id="Lyh-RC-JZD"/>
+                <constraint firstItem="MAJ-6J-ebQ" firstAttribute="top" secondItem="WlO-gr-wrE" secondAttribute="bottom" constant="10" id="QDx-Yi-2YF"/>
+                <constraint firstItem="Ci5-oW-YC7" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="UP2-UW-f2Z"/>
+                <constraint firstAttribute="trailing" secondItem="LVf-HK-Tcr" secondAttribute="trailing" id="VlO-ZP-BpK"/>
+                <constraint firstAttribute="trailing" secondItem="Ci5-oW-YC7" secondAttribute="trailing" id="bJF-6j-cnn"/>
+                <constraint firstItem="LVf-HK-Tcr" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="bX2-hs-yVH"/>
+                <constraint firstItem="WlO-gr-wrE" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="eHK-Nw-SPN"/>
+                <constraint firstItem="LVf-HK-Tcr" firstAttribute="leading" secondItem="WlO-gr-wrE" secondAttribute="trailing" constant="10" id="k8Z-kx-St0"/>
+                <constraint firstAttribute="bottom" secondItem="Ci5-oW-YC7" secondAttribute="bottom" id="kbq-Os-IZx"/>
+                <constraint firstItem="MAJ-6J-ebQ" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="wOS-RG-Lnd"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="154"/>
+        </customView>
+        <collectionViewItem id="yAq-UU-hZu" customClass="FormulaItemViewController" customModule="General_Store"/>
+    </objects>
+</document>
