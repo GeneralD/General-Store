@@ -24,7 +24,7 @@ class General_StoreSpec: QuickSpec {
 					.toBlocking()
 					.single()
 					.trimmingCharacters(in: .whitespacesAndNewlines)
-				expect(result).to(equal("abc"))
+				expect(result) == "abc"
 			}
 			
 			it("gets path to brew") {
@@ -33,7 +33,7 @@ class General_StoreSpec: QuickSpec {
 					.toBlocking()
 					.single()
 					.trimmingCharacters(in: .whitespacesAndNewlines)
-				expect(result).to(equal("/usr/local/bin/brew"))
+				expect(result) == "/usr/local/bin/brew"
 			}
 		}
 		
@@ -47,7 +47,7 @@ class General_StoreSpec: QuickSpec {
 						.toBlocking()
 						.single()
 						.count
-					expect(count).to(equal(11))
+					expect(count) == 11
 				}
 				
 				it("as formula model") {
@@ -58,7 +58,7 @@ class General_StoreSpec: QuickSpec {
 						.toBlocking()
 						.single()
 						.count
-					expect(count).to(equal(5))
+					expect(count) == 5
 				}
 			}
 		}
