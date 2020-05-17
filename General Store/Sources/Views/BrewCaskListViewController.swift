@@ -40,10 +40,6 @@ class BrewCaskListViewController: NSViewController {
 		let itemType = BrewCaskViewItem.self
 		collectionView.register(itemType: itemType)
 		
-		//		tableView.rx.itemSelected
-		//			.bind(to: input.itemSelected)
-		//			.disposed(by: disposeBag)
-		
 		output.items
 			.bind(to: collectionView.rx.items(itemType))
 			.disposed(by: disposeBag)
