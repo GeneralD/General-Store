@@ -730,7 +730,7 @@
         <!--􀑎 Apps-->
         <scene sceneID="Enj-us-YzI">
             <objects>
-                <viewController title="􀑎 Apps" id="4QW-ij-nL2" customClass="BrewCaskListViewController" customModule="General_Store" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="􀑎 Apps" id="4QW-ij-nL2" customClass="CaskListViewController" customModule="General_Store" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="euG-1g-j5a">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>

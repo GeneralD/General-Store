@@ -34,18 +34,18 @@
 		B327DEDB246F831700F029B9 /* NSCollectionView+Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DED2246F831600F029B9 /* NSCollectionView+Items.swift */; };
 		B327DEDF246F9DC200F029B9 /* cask.json in Resources */ = {isa = PBXBuildFile; fileRef = B327DEDE246F9DC200F029B9 /* cask.json */; };
 		B3467A32246D337200C03E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A31246D337200C03E8A /* AppDelegate.swift */; };
-		B3467A34246D337200C03E8A /* BrewCaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A33246D337200C03E8A /* BrewCaskListViewController.swift */; };
+		B3467A34246D337200C03E8A /* CaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A33246D337200C03E8A /* CaskListViewController.swift */; };
 		B3467A36246D337500C03E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3467A35246D337500C03E8A /* Assets.xcassets */; };
 		B3467A39246D337500C03E8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3467A37246D337500C03E8A /* Main.storyboard */; };
 		B3467A45246D337500C03E8A /* General_StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A44246D337500C03E8A /* General_StoreTests.swift */; };
 		B3467A50246D421000C03E8A /* CommandTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A4F246D421000C03E8A /* CommandTask.swift */; };
 		B3467A53246D439000C03E8A /* CommandTask+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A52246D439000C03E8A /* CommandTask+Rx.swift */; };
-		B3467A55246D47AD00C03E8A /* BrewCaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A54246D47AD00C03E8A /* BrewCaskListViewModel.swift */; };
+		B3467A55246D47AD00C03E8A /* CaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A54246D47AD00C03E8A /* CaskListViewModel.swift */; };
 		B3467A57246D48BB00C03E8A /* ObserverConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */; };
 		B3467A59246D4BBC00C03E8A /* ObservableTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */; };
-		B3467A5C246D53F700C03E8A /* BrewCaskViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A5A246D53F700C03E8A /* BrewCaskViewItem.swift */; };
-		B3467A5D246D53F700C03E8A /* BrewCaskViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3467A5B246D53F700C03E8A /* BrewCaskViewItem.xib */; };
-		B3467A5F246D542300C03E8A /* BrewCaskViewItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A5E246D542300C03E8A /* BrewCaskViewItemModel.swift */; };
+		B3467A5C246D53F700C03E8A /* CaskItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A5A246D53F700C03E8A /* CaskItemViewController.swift */; };
+		B3467A5D246D53F700C03E8A /* CaskItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3467A5B246D53F700C03E8A /* CaskItemViewController.xib */; };
+		B3467A5F246D542300C03E8A /* CaskItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A5E246D542300C03E8A /* CaskItemViewModel.swift */; };
 		B39D3495246FA1C100C07234 /* Homebrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D3494246FA1C100C07234 /* Homebrew.swift */; };
 		B39D3497246FA55C00C07234 /* CaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D3496246FA55C00C07234 /* CaskModel.swift */; };
 		BFD47C1C148F79E721F161C0 /* Pods_General_Store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B5711FF36A58C5353BFC86 /* Pods_General_Store.framework */; };
@@ -94,7 +94,7 @@
 		B327DEDE246F9DC200F029B9 /* cask.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cask.json; sourceTree = "<group>"; };
 		B3467A2E246D337200C03E8A /* General Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "General Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3467A31246D337200C03E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3467A33246D337200C03E8A /* BrewCaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskListViewController.swift; sourceTree = "<group>"; };
+		B3467A33246D337200C03E8A /* CaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskListViewController.swift; sourceTree = "<group>"; };
 		B3467A35246D337500C03E8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3467A38246D337500C03E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3467A3A246D337500C03E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,12 +104,12 @@
 		B3467A46246D337500C03E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3467A4F246D421000C03E8A /* CommandTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTask.swift; sourceTree = "<group>"; };
 		B3467A52246D439000C03E8A /* CommandTask+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommandTask+Rx.swift"; sourceTree = "<group>"; };
-		B3467A54246D47AD00C03E8A /* BrewCaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskListViewModel.swift; sourceTree = "<group>"; };
+		B3467A54246D47AD00C03E8A /* CaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskListViewModel.swift; sourceTree = "<group>"; };
 		B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverConvertible.swift; sourceTree = "<group>"; };
 		B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableTypeExtension.swift; sourceTree = "<group>"; };
-		B3467A5A246D53F700C03E8A /* BrewCaskViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskViewItem.swift; sourceTree = "<group>"; };
-		B3467A5B246D53F700C03E8A /* BrewCaskViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrewCaskViewItem.xib; sourceTree = "<group>"; };
-		B3467A5E246D542300C03E8A /* BrewCaskViewItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewCaskViewItemModel.swift; sourceTree = "<group>"; };
+		B3467A5A246D53F700C03E8A /* CaskItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskItemViewController.swift; sourceTree = "<group>"; };
+		B3467A5B246D53F700C03E8A /* CaskItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaskItemViewController.xib; sourceTree = "<group>"; };
+		B3467A5E246D542300C03E8A /* CaskItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskItemViewModel.swift; sourceTree = "<group>"; };
 		B39D3494246FA1C100C07234 /* Homebrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homebrew.swift; sourceTree = "<group>"; };
 		B39D3496246FA55C00C07234 /* CaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskModel.swift; sourceTree = "<group>"; };
 		C34D95A76C20C691A9254F00 /* Pods-General Store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General Store.debug.xcconfig"; path = "Target Support Files/Pods-General Store/Pods-General Store.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				B3467A37246D337500C03E8A /* Main.storyboard */,
-				B3467A5B246D53F700C03E8A /* BrewCaskViewItem.xib */,
+				B3467A5B246D53F700C03E8A /* CaskItemViewController.xib */,
 			);
 			path = "User Interfaces";
 			sourceTree = "<group>";
@@ -288,8 +288,8 @@
 		B3467A60246D580E00C03E8A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B3467A33246D337200C03E8A /* BrewCaskListViewController.swift */,
-				B3467A5A246D53F700C03E8A /* BrewCaskViewItem.swift */,
+				B3467A33246D337200C03E8A /* CaskListViewController.swift */,
+				B3467A5A246D53F700C03E8A /* CaskItemViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,8 +297,8 @@
 		B3467A61246D581500C03E8A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B3467A54246D47AD00C03E8A /* BrewCaskListViewModel.swift */,
-				B3467A5E246D542300C03E8A /* BrewCaskViewItemModel.swift */,
+				B3467A54246D47AD00C03E8A /* CaskListViewModel.swift */,
+				B3467A5E246D542300C03E8A /* CaskItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -422,7 +422,7 @@
 			files = (
 				B3467A36246D337500C03E8A /* Assets.xcassets in Resources */,
 				B3467A39246D337500C03E8A /* Main.storyboard in Resources */,
-				B3467A5D246D53F700C03E8A /* BrewCaskViewItem.xib in Resources */,
+				B3467A5D246D53F700C03E8A /* CaskItemViewController.xib in Resources */,
 				B327DEDF246F9DC200F029B9 /* cask.json in Resources */,
 				B323666D24703D8D00274BFE /* formula.json in Resources */,
 			);
@@ -500,17 +500,17 @@
 			files = (
 				B327DED3246F831700F029B9 /* CollectionViewCellWithDelegateFactory.swift in Sources */,
 				B327DED6246F831700F029B9 /* CollectionViewCellFactoryBinder.swift in Sources */,
-				B3467A5F246D542300C03E8A /* BrewCaskViewItemModel.swift in Sources */,
+				B3467A5F246D542300C03E8A /* CaskItemViewModel.swift in Sources */,
 				B327DEC5246F788500F029B9 /* NSCollectionView+Reusable.swift in Sources */,
 				B327DE95246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift in Sources */,
-				B3467A55246D47AD00C03E8A /* BrewCaskListViewModel.swift in Sources */,
+				B3467A55246D47AD00C03E8A /* CaskListViewModel.swift in Sources */,
 				B323666B247003D000274BFE /* URL+Rx.swift in Sources */,
 				B327DEDB246F831700F029B9 /* NSCollectionView+Items.swift in Sources */,
 				B327DED7246F831700F029B9 /* Configurable.swift in Sources */,
 				B3467A50246D421000C03E8A /* CommandTask.swift in Sources */,
 				B3236670247052C200274BFE /* FormulaModel.swift in Sources */,
 				B327DE9B246EB4A500F029B9 /* DelegateProxyType.swift in Sources */,
-				B3467A34246D337200C03E8A /* BrewCaskListViewController.swift in Sources */,
+				B3467A34246D337200C03E8A /* CaskListViewController.swift in Sources */,
 				B3467A53246D439000C03E8A /* CommandTask+Rx.swift in Sources */,
 				B327DE99246EB24100F029B9 /* RxCollectionViewDataSourceProxy.swift in Sources */,
 				B327DEC6246F788500F029B9 /* NibLoadable.swift in Sources */,
@@ -519,7 +519,7 @@
 				B327DEC7246F788500F029B9 /* Reusable.swift in Sources */,
 				B327DE93246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift in Sources */,
 				B327DEBE246F778900F029B9 /* StoryboardBased.swift in Sources */,
-				B3467A5C246D53F700C03E8A /* BrewCaskViewItem.swift in Sources */,
+				B3467A5C246D53F700C03E8A /* CaskItemViewController.swift in Sources */,
 				B327DE97246EB03300F029B9 /* RxCocoa.swift in Sources */,
 				B327DE91246EA9A700F029B9 /* NSCollectionView+Rx.swift in Sources */,
 				B327DEDA246F831700F029B9 /* HasDelegate.swift in Sources */,

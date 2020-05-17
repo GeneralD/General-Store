@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CaskListViewController.swift
 //  General Store
 //
 //  Created by Yumenosuke Koukata on 2020/05/14.

@@ -1,5 +1,5 @@
 //
-//  BrewCaskListViewModel.swift
+//  CaskListViewModel.swift
 //  General Store
 //
 //  Created by Yumenosuke Koukata on 2020/05/14.
@@ -11,21 +11,21 @@ import RxSwift
 import RxRelay
 import Moya
 
-protocol BrewCaskListViewModelInput {
+protocol CaskListViewModelInput {
 	var reload: AnyObserver<()> { get }
 }
 
-protocol BrewCaskListViewModelOutput {
-	var items: Observable<[BrewCaskViewItemModel]> { get }
+protocol CaskListViewModelOutput {
+	var items: Observable<[CaskItemViewModel]> { get }
 }
 
-final class BrewCaskListViewModel: BrewCaskListViewModelInput, BrewCaskListViewModelOutput {
+final class CaskListViewModel: CaskListViewModelInput, CaskListViewModelOutput {
 	
 	// MARK: Inputs
 	let reload: AnyObserver<()>
 	
 	// MARK: Outputs
-	let items: Observable<[BrewCaskViewItemModel]>
+	let items: Observable<[CaskItemViewModel]>
 	
 	private let disposeBag = DisposeBag()
 	
@@ -33,7 +33,7 @@ final class BrewCaskListViewModel: BrewCaskListViewModelInput, BrewCaskListViewM
 		let _reload = BehaviorRelay<()>(value: ())
 		reload = _reload.asObserver()
 		
-		let _items = BehaviorRelay<[BrewCaskViewItemModel]>(value: [])
+		let _items = BehaviorRelay<[CaskItemViewModel]>(value: [])
 		items = _items.asObservable()
 
 		let provider = MoyaProvider<Homebrew>()
@@ -41,7 +41,7 @@ final class BrewCaskListViewModel: BrewCaskListViewModelInput, BrewCaskListViewM
 			.flatMap { provider.rx.request(.caskList) }
 			.filterSuccessfulStatusCodes()
 			.map([CaskModel].self)
-			.map { $0.map(BrewCaskViewItemModel.init(model: )) }
+			.map { $0.map(CaskItemViewModel.init(model: )) }
 			.bind(to: _items)
 			.disposed(by: disposeBag)
 	}

@@ -1,5 +1,5 @@
 //
-//  BrewCaskItemModel.swift
+//  CaskItemViewModel.swift
 //  General Store
 //
 //  Created by Yumenosuke Koukata on 2020/05/14.
@@ -12,19 +12,19 @@ import RxRelay
 import Alamofire
 import RxAlamofire
 
-protocol BrewCaskViewItemModelInput {
+protocol CaskItemViewModelInput {
 	var model: AnyObserver<CaskModel> { get }
 	var browseClick: AnyObserver<()> { get }
 	var downloadClick: AnyObserver<()> { get }
 	var installClick: AnyObserver<()> { get }
 }
 
-protocol BrewCaskViewItemModelOutput {
+protocol CaskItemViewModelOutput {
 	var name: Observable<String?> { get }
 	var version: Observable<String?> { get }
 }
 
-final class BrewCaskViewItemModel: BrewCaskViewItemModelInput, BrewCaskViewItemModelOutput {
+final class CaskItemViewModel: CaskItemViewModelInput, CaskItemViewModelOutput {
 	
 	// MARK: Inputs
 	let model: AnyObserver<CaskModel>
