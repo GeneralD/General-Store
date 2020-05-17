@@ -17,6 +17,14 @@ PODS:
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
+  - RxNimble (4.7.1):
+    - RxNimble/RxBlocking (= 4.7.1)
+  - RxNimble/Core (4.7.1):
+    - Nimble (~> 8.0)
+    - RxSwift (~> 5.0)
+  - RxNimble/RxBlocking (4.7.1):
+    - RxBlocking
+    - RxNimble/Core
   - RxOptional (4.1.0):
     - RxCocoa (~> 5)
     - RxSwift (~> 5)
@@ -29,11 +37,10 @@ PODS:
 
 DEPENDENCIES:
   - Moya/RxSwift
-  - Nimble
   - Quick
   - RxAlamofire
-  - RxBlocking
   - RxCocoa
+  - RxNimble
   - RxOptional
   - RxSwift
   - RxViewController
@@ -47,6 +54,7 @@ SPEC REPOS:
     - RxAlamofire
     - RxBlocking
     - RxCocoa
+    - RxNimble
     - RxOptional
     - RxRelay
     - RxSwift
@@ -60,11 +68,12 @@ SPEC CHECKSUMS:
   RxAlamofire: 878eb06baefd76df6062889be11592434e6c4a95
   RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxNimble: dca9840cfa96ce73847813432ddc6e84e1fcdd61
   RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
 
-PODFILE CHECKSUM: 39d70e5d4642c05ec52d14b9ba91ee4e2fd95723
+PODFILE CHECKSUM: 82a55bd10acb5566b991c436f38ab940ec08b17e
 
 COCOAPODS: 1.9.1

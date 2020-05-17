@@ -12,8 +12,7 @@ target 'General Store' do
 	
 	target 'General StoreTests' do
 		inherit! :search_paths
-		pod 'RxBlocking'
 		pod 'Quick'
-		pod 'Nimble'
+		pod 'RxNimble'
 	end
 end

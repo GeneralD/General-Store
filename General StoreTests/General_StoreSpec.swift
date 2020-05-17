@@ -9,7 +9,7 @@
 import XCTest
 import Quick
 import Nimble
-import RxBlocking
+import RxNimble
 import Moya
 @testable import General_Store
 
@@ -20,20 +20,7 @@ class General_StoreSpec: QuickSpec {
 		describe("CommandTask") {
 			it("echo a string") {
 				let task = CommandTask(launchPath: "/bin/echo", arguments: "abc")
-				let result = try! task.rx.response
-					.toBlocking()
-					.single()
-					.trimmingCharacters(in: .whitespacesAndNewlines)
-				expect(result) == "abc"
-			}
-			
-			it("gets path to brew") {
-				let task = CommandTask(launchPath: "/usr/bin/which", arguments: "brew")
-				let result = try! task.rx.response
-					.toBlocking()
-					.single()
-					.trimmingCharacters(in: .whitespacesAndNewlines)
-				expect(result) == "/usr/local/bin/brew"
+				expect(task.rx.response).first().to(beginWith("abc"))
 			}
 		}
 		
@@ -41,24 +28,20 @@ class General_StoreSpec: QuickSpec {
 			context("makes models from local sample data") {
 				it("as cask model") {
 					let provider = MoyaProvider<Homebrew>(stubClosure: MoyaProvider.immediatelyStub)
-					let count = try? provider.rx.request(.caskList)
+					let count = provider.rx.request(.caskList)
 						.filterSuccessfulStatusCodes()
 						.map([CaskModel].self)
-						.toBlocking()
-						.single()
-						.count
-					expect(count) == 11
+						.map { $0.count }
+					expect(count).first() == 11
 				}
 				
 				it("as formula model") {
 					let provider = MoyaProvider<Homebrew>(stubClosure: MoyaProvider.immediatelyStub)
-					let count = try? provider.rx.request(.formulaList)
+					let count = provider.rx.request(.formulaList)
 						.filterSuccessfulStatusCodes()
 						.map([FormulaModel].self)
-						.toBlocking()
-						.single()
-						.count
-					expect(count) == 5
+						.map { $0.count }
+					expect(count).first() == 5
 				}
 			}
 		}
