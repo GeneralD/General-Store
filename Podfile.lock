@@ -58,7 +58,7 @@ DEPENDENCIES:
   - RxAlamofire
   - RxCocoa
   - RxNimble
-  - RxNSCollectionView (from `https://github.com/GeneralD/RxNSCollectionView`)
+  - RxNSCollectionView
   - RxOptional
   - RxSwift
   - RxViewController
@@ -73,19 +73,11 @@ SPEC REPOS:
     - RxBlocking
     - RxCocoa
     - RxNimble
+    - RxNSCollectionView
     - RxOptional
     - RxRelay
     - RxSwift
     - RxViewController
-
-EXTERNAL SOURCES:
-  RxNSCollectionView:
-    :git: https://github.com/GeneralD/RxNSCollectionView
-
-CHECKOUT OPTIONS:
-  RxNSCollectionView:
-    :commit: 11a59b6762e29bf075f9140bc1ef19e34607c900
-    :git: https://github.com/GeneralD/RxNSCollectionView
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
@@ -102,6 +94,6 @@ SPEC CHECKSUMS:
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
 
-PODFILE CHECKSUM: 201b3dff1bf041034021c131987e61cc07597b33
+PODFILE CHECKSUM: a27cd44f65bf71925ab3093cc725e9ddf0adb6d5
 
 COCOAPODS: 1.9.1

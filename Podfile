@@ -7,9 +7,9 @@ target 'General Store' do
 	pod 'RxCocoa'
 	pod 'RxOptional'
 	pod 'RxViewController'
+	pod 'RxNSCollectionView'
 	pod 'RxAlamofire'
 	pod 'Moya/RxSwift'
-	pod 'RxNSCollectionView', :git => 'https://github.com/GeneralD/RxNSCollectionView'
 	
 	target 'General StoreTests' do
 		inherit! :search_paths
