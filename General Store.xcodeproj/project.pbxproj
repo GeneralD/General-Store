@@ -16,27 +16,6 @@
 		B32366782471219200274BFE /* FormulaItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32366772471219200274BFE /* FormulaItemViewController.swift */; };
 		B323667A247121F500274BFE /* FormulaItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3236679247121F500274BFE /* FormulaItemViewModel.swift */; };
 		B323667E2471253B00274BFE /* FormulaItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B323667D2471252F00274BFE /* FormulaItemViewController.xib */; };
-		B327DE91246EA9A700F029B9 /* NSCollectionView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE90246EA9A700F029B9 /* NSCollectionView+Rx.swift */; };
-		B327DE93246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE92246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift */; };
-		B327DE95246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE94246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift */; };
-		B327DE97246EB03300F029B9 /* RxCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE96246EB03300F029B9 /* RxCocoa.swift */; };
-		B327DE99246EB24100F029B9 /* RxCollectionViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE98246EB24100F029B9 /* RxCollectionViewDataSourceProxy.swift */; };
-		B327DE9B246EB4A500F029B9 /* DelegateProxyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DE9A246EB4A500F029B9 /* DelegateProxyType.swift */; };
-		B327DEBD246F778900F029B9 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEBB246F778800F029B9 /* StoryboardSceneBased.swift */; };
-		B327DEBE246F778900F029B9 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEBC246F778900F029B9 /* StoryboardBased.swift */; };
-		B327DEC4246F788500F029B9 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEBF246F788400F029B9 /* NibOwnerLoadable.swift */; };
-		B327DEC5246F788500F029B9 /* NSCollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEC0246F788400F029B9 /* NSCollectionView+Reusable.swift */; };
-		B327DEC6246F788500F029B9 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEC1246F788400F029B9 /* NibLoadable.swift */; };
-		B327DEC7246F788500F029B9 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DEC2246F788500F029B9 /* Reusable.swift */; };
-		B327DED3246F831700F029B9 /* CollectionViewCellWithDelegateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DECA246F831600F029B9 /* CollectionViewCellWithDelegateFactory.swift */; };
-		B327DED4246F831700F029B9 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DECB246F831600F029B9 /* Binding.swift */; };
-		B327DED5246F831700F029B9 /* CollectionViewCellsBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DECC246F831600F029B9 /* CollectionViewCellsBinder.swift */; };
-		B327DED6246F831700F029B9 /* CollectionViewCellFactoryBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DECD246F831600F029B9 /* CollectionViewCellFactoryBinder.swift */; };
-		B327DED7246F831700F029B9 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DECE246F831600F029B9 /* Configurable.swift */; };
-		B327DED8246F831700F029B9 /* CollectionViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DECF246F831600F029B9 /* CollectionViewCellFactory.swift */; };
-		B327DED9246F831700F029B9 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DED0246F831600F029B9 /* Binder.swift */; };
-		B327DEDA246F831700F029B9 /* HasDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DED1246F831600F029B9 /* HasDelegate.swift */; };
-		B327DEDB246F831700F029B9 /* NSCollectionView+Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327DED2246F831600F029B9 /* NSCollectionView+Items.swift */; };
 		B327DEDF246F9DC200F029B9 /* cask.json in Resources */ = {isa = PBXBuildFile; fileRef = B327DEDE246F9DC200F029B9 /* cask.json */; };
 		B3467A32246D337200C03E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A31246D337200C03E8A /* AppDelegate.swift */; };
 		B3467A34246D337200C03E8A /* CaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A33246D337200C03E8A /* CaskListViewController.swift */; };
@@ -80,27 +59,6 @@
 		B32366772471219200274BFE /* FormulaItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaItemViewController.swift; sourceTree = "<group>"; };
 		B3236679247121F500274BFE /* FormulaItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaItemViewModel.swift; sourceTree = "<group>"; };
 		B323667D2471252F00274BFE /* FormulaItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormulaItemViewController.xib; sourceTree = "<group>"; };
-		B327DE90246EA9A700F029B9 /* NSCollectionView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Rx.swift"; sourceTree = "<group>"; };
-		B327DE92246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewReactiveArrayDataSource.swift; sourceTree = "<group>"; };
-		B327DE94246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewDataSourceType.swift; sourceTree = "<group>"; };
-		B327DE96246EB03300F029B9 /* RxCocoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCocoa.swift; sourceTree = "<group>"; };
-		B327DE98246EB24100F029B9 /* RxCollectionViewDataSourceProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewDataSourceProxy.swift; sourceTree = "<group>"; };
-		B327DE9A246EB4A500F029B9 /* DelegateProxyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxyType.swift; sourceTree = "<group>"; };
-		B327DEBB246F778800F029B9 /* StoryboardSceneBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSceneBased.swift; sourceTree = "<group>"; };
-		B327DEBC246F778900F029B9 /* StoryboardBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
-		B327DEBF246F788400F029B9 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
-		B327DEC0246F788400F029B9 /* NSCollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Reusable.swift"; sourceTree = "<group>"; };
-		B327DEC1246F788400F029B9 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
-		B327DEC2246F788500F029B9 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
-		B327DECA246F831600F029B9 /* CollectionViewCellWithDelegateFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellWithDelegateFactory.swift; sourceTree = "<group>"; };
-		B327DECB246F831600F029B9 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
-		B327DECC246F831600F029B9 /* CollectionViewCellsBinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellsBinder.swift; sourceTree = "<group>"; };
-		B327DECD246F831600F029B9 /* CollectionViewCellFactoryBinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellFactoryBinder.swift; sourceTree = "<group>"; };
-		B327DECE246F831600F029B9 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
-		B327DECF246F831600F029B9 /* CollectionViewCellFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellFactory.swift; sourceTree = "<group>"; };
-		B327DED0246F831600F029B9 /* Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
-		B327DED1246F831600F029B9 /* HasDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasDelegate.swift; sourceTree = "<group>"; };
-		B327DED2246F831600F029B9 /* NSCollectionView+Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Items.swift"; sourceTree = "<group>"; };
 		B327DEDE246F9DC200F029B9 /* cask.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cask.json; sourceTree = "<group>"; };
 		B3467A2E246D337200C03E8A /* General Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "General Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3467A31246D337200C03E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -184,55 +142,10 @@
 			path = CommandTask;
 			sourceTree = "<group>";
 		};
-		B327DEA0246EC25B00F029B9 /* NSCollectionView+Rx */ = {
-			isa = PBXGroup;
-			children = (
-				B327DE90246EA9A700F029B9 /* NSCollectionView+Rx.swift */,
-				B327DE94246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift */,
-				B327DE98246EB24100F029B9 /* RxCollectionViewDataSourceProxy.swift */,
-				B327DE92246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift */,
-				B327DE9A246EB4A500F029B9 /* DelegateProxyType.swift */,
-				B327DE96246EB03300F029B9 /* RxCocoa.swift */,
-			);
-			path = "NSCollectionView+Rx";
-			sourceTree = "<group>";
-		};
-		B327DEBA246F76E500F029B9 /* NSCollectionViewReusable */ = {
-			isa = PBXGroup;
-			children = (
-				B327DEBC246F778900F029B9 /* StoryboardBased.swift */,
-				B327DEBB246F778800F029B9 /* StoryboardSceneBased.swift */,
-				B327DEC1246F788400F029B9 /* NibLoadable.swift */,
-				B327DEBF246F788400F029B9 /* NibOwnerLoadable.swift */,
-				B327DEC2246F788500F029B9 /* Reusable.swift */,
-				B327DEC0246F788400F029B9 /* NSCollectionView+Reusable.swift */,
-			);
-			path = NSCollectionViewReusable;
-			sourceTree = "<group>";
-		};
-		B327DEC9246F82F000F029B9 /* RxItems */ = {
-			isa = PBXGroup;
-			children = (
-				B327DED0246F831600F029B9 /* Binder.swift */,
-				B327DECB246F831600F029B9 /* Binding.swift */,
-				B327DECF246F831600F029B9 /* CollectionViewCellFactory.swift */,
-				B327DECD246F831600F029B9 /* CollectionViewCellFactoryBinder.swift */,
-				B327DECC246F831600F029B9 /* CollectionViewCellsBinder.swift */,
-				B327DECA246F831600F029B9 /* CollectionViewCellWithDelegateFactory.swift */,
-				B327DECE246F831600F029B9 /* Configurable.swift */,
-				B327DED1246F831600F029B9 /* HasDelegate.swift */,
-				B327DED2246F831600F029B9 /* NSCollectionView+Items.swift */,
-			);
-			path = RxItems;
-			sourceTree = "<group>";
-		};
 		B327DEDC246F854000F029B9 /* InApp Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				B323666E247040F400274BFE /* CommandTask */,
-				B327DEBA246F76E500F029B9 /* NSCollectionViewReusable */,
-				B327DEA0246EC25B00F029B9 /* NSCollectionView+Rx */,
-				B327DEC9246F82F000F029B9 /* RxItems */,
 			);
 			path = "InApp Frameworks";
 			sourceTree = "<group>";
@@ -532,44 +445,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B327DED3246F831700F029B9 /* CollectionViewCellWithDelegateFactory.swift in Sources */,
-				B327DED6246F831700F029B9 /* CollectionViewCellFactoryBinder.swift in Sources */,
 				B323667424711F4300274BFE /* FormulaListViewController.swift in Sources */,
 				B3467A5F246D542300C03E8A /* CaskItemViewModel.swift in Sources */,
-				B327DEC5246F788500F029B9 /* NSCollectionView+Reusable.swift in Sources */,
-				B327DE95246EAE8700F029B9 /* RxCollectionViewDataSourceType.swift in Sources */,
 				B3467A55246D47AD00C03E8A /* CaskListViewModel.swift in Sources */,
 				B323666B247003D000274BFE /* URL+Rx.swift in Sources */,
-				B327DEDB246F831700F029B9 /* NSCollectionView+Items.swift in Sources */,
-				B327DED7246F831700F029B9 /* Configurable.swift in Sources */,
 				B3467A50246D421000C03E8A /* CommandTask.swift in Sources */,
 				B3236670247052C200274BFE /* FormulaModel.swift in Sources */,
-				B327DE9B246EB4A500F029B9 /* DelegateProxyType.swift in Sources */,
 				B3467A34246D337200C03E8A /* CaskListViewController.swift in Sources */,
 				B3467A53246D439000C03E8A /* CommandTask+Rx.swift in Sources */,
-				B327DE99246EB24100F029B9 /* RxCollectionViewDataSourceProxy.swift in Sources */,
-				B327DEC6246F788500F029B9 /* NibLoadable.swift in Sources */,
 				B3467A32246D337200C03E8A /* AppDelegate.swift in Sources */,
-				B327DEC4246F788500F029B9 /* NibOwnerLoadable.swift in Sources */,
-				B327DEC7246F788500F029B9 /* Reusable.swift in Sources */,
-				B327DE93246EAA7200F029B9 /* RxCollectionViewReactiveArrayDataSource.swift in Sources */,
-				B327DEBE246F778900F029B9 /* StoryboardBased.swift in Sources */,
 				B3467A5C246D53F700C03E8A /* CaskItemViewController.swift in Sources */,
-				B327DE97246EB03300F029B9 /* RxCocoa.swift in Sources */,
-				B327DE91246EA9A700F029B9 /* NSCollectionView+Rx.swift in Sources */,
-				B327DEDA246F831700F029B9 /* HasDelegate.swift in Sources */,
-				B327DED4246F831700F029B9 /* Binding.swift in Sources */,
-				B327DED9246F831700F029B9 /* Binder.swift in Sources */,
 				B39D3495246FA1C100C07234 /* Homebrew.swift in Sources */,
-				B327DED5246F831700F029B9 /* CollectionViewCellsBinder.swift in Sources */,
 				B3467A57246D48BB00C03E8A /* ObserverConvertible.swift in Sources */,
 				B323667624711FE200274BFE /* FormulaListViewModel.swift in Sources */,
 				B323667A247121F500274BFE /* FormulaItemViewModel.swift in Sources */,
-				B327DED8246F831700F029B9 /* CollectionViewCellFactory.swift in Sources */,
 				B39D3497246FA55C00C07234 /* CaskModel.swift in Sources */,
 				B3467A59246D4BBC00C03E8A /* ObservableTypeExtension.swift in Sources */,
 				B32366782471219200274BFE /* FormulaItemViewController.swift in Sources */,
-				B327DEBD246F778900F029B9 /* StoryboardSceneBased.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
