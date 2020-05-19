@@ -10,7 +10,6 @@ import Foundation
 
 class CommandTask: Equatable {
 	
-	private static let ENCODING = String.Encoding.utf8
 	private static var tasks = [CommandTask]()
 	
 	private let task = Process()
@@ -56,13 +55,13 @@ class CommandTask: Equatable {
 			return self
 		}
 		
-		NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading, queue: nil, using:  { [weak self] (notification: Notification!) in
+		NotificationCenter.default.addObserver(forName: .NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading, queue: nil, using:  { [weak self] (notification: Notification!) in
 			guard let `self` = self else {
 				return
 			}
 			
 			let dataHandler: (Data) -> () = { data in
-				if let outStr = NSString(data: data, encoding: CommandTask.ENCODING.rawValue) {
+				if let outStr = String(bytes: data, encoding: .utf8) {
 					let s = outStr as String
 					if !s.isEmpty {
 						self.outputObserver?(s)
@@ -99,7 +98,7 @@ class CommandTask: Equatable {
 	
 	func terminate() {
 		task.terminate()
-		NotificationCenter.default.removeObserver(self, name: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading)
+		NotificationCenter.default.removeObserver(self, name: .NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading)
 		CommandTask.tasks = CommandTask.tasks.filter { $0 != self }
 	}
 	
@@ -124,7 +123,7 @@ class CommandTask: Equatable {
 	}
 	
 	func write(_ string: String) {
-		guard let data = string.data(using: CommandTask.ENCODING) else {
+		guard let data = string.data(using: .utf8) else {
 			return
 		}
 		writeData(data)
