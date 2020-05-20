@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import GBDeviceInfo
 
 struct FormulaModel: Codable {
 	let name: String
@@ -70,8 +71,19 @@ struct FormulaModel: Codable {
 		}
 		
 		struct Link: Codable {
-			let url: String
+			let url: URL
 			let sha256: String
 		}
+	}
+}
+
+extension FormulaModel {
+	var sourceUrl: URL? {
+		urls.stable.url
+	}
+	
+	var binaryUrl: URL? {
+		guard let osName = GBDeviceInfo.deviceInfo()?.osName else { return nil }
+		return bottle.stable?.files[osName]?.url ?? bottle.stable?.files.first?.value.url
 	}
 }

@@ -10,6 +10,7 @@ target 'General Store' do
 	pod 'RxNSCollectionView'
 	pod 'RxAlamofire'
 	pod 'Moya/RxSwift'
+	pod 'GBDeviceInfo'
 	
 	target 'General StoreTests' do
 		inherit! :search_paths

@@ -74,11 +74,12 @@ final class FormulaItemViewModel: FormulaItemViewModelInput, FormulaItemViewMode
 			.subscribe(onNext: { NSWorkspace.shared.open($0) })
 			.disposed(by: disposeBag)
 		
-//		let userDownloadUrl = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
-//		_downloadClick
-//			.flatMap { AF.rx.data(.get, _model.value.url) }
-//			.bind(to: userDownloadUrl.appendingPathComponent(_model.value.url.lastPathComponent).rx.write)
-//			.disposed(by: disposeBag)
+		let userDownloadUrl = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
+		_downloadClick
+			.compactMap { _model.value.binaryUrl }
+			.flatMap { url in AF.rx.data(.get, url) }
+			.bind(to: userDownloadUrl.appendingPathComponent(_model.value.binaryUrl?.lastPathComponent ?? "binary").rx.write)
+			.disposed(by: disposeBag)
 //
 //		let command = "/usr/local/bin/brew"
 //		_installClick

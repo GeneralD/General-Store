@@ -30,6 +30,7 @@
 		B3467A5C246D53F700C03E8A /* CaskItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A5A246D53F700C03E8A /* CaskItemViewController.swift */; };
 		B3467A5D246D53F700C03E8A /* CaskItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3467A5B246D53F700C03E8A /* CaskItemViewController.xib */; };
 		B3467A5F246D542300C03E8A /* CaskItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A5E246D542300C03E8A /* CaskItemViewModel.swift */; };
+		B39567992474283F00C4DC36 /* GBDeviceInfoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39567982474283F00C4DC36 /* GBDeviceInfoExtension.swift */; };
 		B39D3495246FA1C100C07234 /* Homebrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D3494246FA1C100C07234 /* Homebrew.swift */; };
 		B39D3497246FA55C00C07234 /* CaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D3496246FA55C00C07234 /* CaskModel.swift */; };
 		BFD47C1C148F79E721F161C0 /* Pods_General_Store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B5711FF36A58C5353BFC86 /* Pods_General_Store.framework */; };
@@ -78,6 +79,7 @@
 		B3467A5A246D53F700C03E8A /* CaskItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskItemViewController.swift; sourceTree = "<group>"; };
 		B3467A5B246D53F700C03E8A /* CaskItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaskItemViewController.xib; sourceTree = "<group>"; };
 		B3467A5E246D542300C03E8A /* CaskItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskItemViewModel.swift; sourceTree = "<group>"; };
+		B39567982474283F00C4DC36 /* GBDeviceInfoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBDeviceInfoExtension.swift; sourceTree = "<group>"; };
 		B39D3494246FA1C100C07234 /* Homebrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homebrew.swift; sourceTree = "<group>"; };
 		B39D3496246FA55C00C07234 /* CaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskModel.swift; sourceTree = "<group>"; };
 		C34D95A76C20C691A9254F00 /* Pods-General Store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General Store.debug.xcconfig"; path = "Target Support Files/Pods-General Store/Pods-General Store.debug.xcconfig"; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */,
 				B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */,
 				B323666A247003D000274BFE /* URL+Rx.swift */,
+				B39567982474283F00C4DC36 /* GBDeviceInfoExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				B323667A247121F500274BFE /* FormulaItemViewModel.swift in Sources */,
 				B39D3497246FA55C00C07234 /* CaskModel.swift in Sources */,
 				B3467A59246D4BBC00C03E8A /* ObservableTypeExtension.swift in Sources */,
+				B39567992474283F00C4DC36 /* GBDeviceInfoExtension.swift in Sources */,
 				B32366782471219200274BFE /* FormulaItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
