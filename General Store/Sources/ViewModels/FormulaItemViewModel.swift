@@ -80,11 +80,11 @@ final class FormulaItemViewModel: FormulaItemViewModelInput, FormulaItemViewMode
 			.flatMap { url in AF.rx.data(.get, url) }
 			.bind(to: userDownloadUrl.appendingPathComponent(_model.value.binaryUrl?.lastPathComponent ?? "binary").rx.write)
 			.disposed(by: disposeBag)
-//
-//		let command = "/usr/local/bin/brew"
-//		_installClick
-//			.flatMap { CommandTask(cmd: command, arguments: "install", _model.value.token).rx.response }
-//			.subscribe(onNext: { print($0) })
-//			.disposed(by: disposeBag)
+		
+		let command = "/usr/local/bin/brew"
+		_installClick
+			.flatMap { CommandTask(launchPath: command, arguments: "install", _model.value.name, "--force").rx.response }
+			.subscribe(onNext: { print($0) })
+			.disposed(by: disposeBag)
 	}
 }

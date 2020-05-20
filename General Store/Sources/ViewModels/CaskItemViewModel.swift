@@ -82,7 +82,7 @@ final class CaskItemViewModel: CaskItemViewModelInput, CaskItemViewModelOutput {
 		
 		let command = "/usr/local/bin/brew"
 		_installClick
-			.flatMap { CommandTask(launchPath: command, arguments: "cask", "install", _model.value.token).rx.response }
+			.flatMap { CommandTask(launchPath: command, arguments: "cask", "install", _model.value.token, "--force").rx.response }
 			.subscribe(onNext: { print($0) })
 			.disposed(by: disposeBag)
 	}
