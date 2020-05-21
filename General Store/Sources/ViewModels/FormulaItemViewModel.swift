@@ -11,6 +11,7 @@ import RxSwift
 import RxRelay
 import Alamofire
 import RxAlamofire
+import SwiftShell
 
 protocol FormulaItemViewModelInput {
 	var model: AnyObserver<FormulaModel> { get }
@@ -83,8 +84,8 @@ final class FormulaItemViewModel: FormulaItemViewModelInput, FormulaItemViewMode
 		
 		let command = "/usr/local/bin/brew"
 		_installClick
-			.flatMap { CommandTask(launchPath: command, arguments: "install", _model.value.name, "--force").rx.response }
-			.subscribe(onNext: { print($0) })
+			.flatMap { runAsync(command, "install", _model.value.name, "--force").rx.response }
+			.subscribe(onNext: { print($0.read()) })
 			.disposed(by: disposeBag)
 	}
 }

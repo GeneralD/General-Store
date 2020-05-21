@@ -16,14 +16,6 @@ import Moya
 class General_StoreSpec: QuickSpec {
 	
 	override func spec() {
-		
-		describe("CommandTask") {
-			it("echo a string") {
-				let task = CommandTask(launchPath: "/bin/echo", arguments: "abc")
-				expect(task.rx.response).first().to(beginWith("abc"))
-			}
-		}
-		
 		describe("Moya Provider") {
 			context("makes models from local sample data") {
 				it("as cask model") {

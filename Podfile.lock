@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.1.0)
+  - AppSandboxFileAccess (1.0.14)
   - GBDeviceInfo (6.3.0):
     - GBDeviceInfo/Core (= 6.3.0)
   - GBDeviceInfo/Core (6.3.0)
@@ -54,8 +55,10 @@ PODS:
   - RxViewController (1.0.0):
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
+  - SwiftShell (5.0.1)
 
 DEPENDENCIES:
+  - AppSandboxFileAccess
   - GBDeviceInfo
   - Moya/RxSwift
   - Quick
@@ -66,10 +69,12 @@ DEPENDENCIES:
   - RxOptional
   - RxSwift
   - RxViewController
+  - SwiftShell
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AppSandboxFileAccess
     - GBDeviceInfo
     - Moya
     - Nimble
@@ -83,9 +88,11 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - RxViewController
+    - SwiftShell
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  AppSandboxFileAccess: f3e10b0ba10bbaa6dc6996639ff47836050329c5
   GBDeviceInfo: a3f39dba1a04dcb630abff65d6f7e8fbf319eadd
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Nimble: 2da33c44adfde49552d4a6b3ef16039a45bf8dca
@@ -99,7 +106,8 @@ SPEC CHECKSUMS:
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
+  SwiftShell: 3720ffff8a00fe7fe7271537a4d660fea55125e4
 
-PODFILE CHECKSUM: f4c0d641b895ff7cb9faa5e841fb67a2e0049564
+PODFILE CHECKSUM: 10ebb38264c82b8e26b24cb8c154357c979ebc8e
 
 COCOAPODS: 1.9.1

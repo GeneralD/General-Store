@@ -11,6 +11,7 @@ target 'General Store' do
 	pod 'RxAlamofire'
 	pod 'Moya/RxSwift'
 	pod 'GBDeviceInfo'
+	pod 'SwiftShell'
 	
 	target 'General StoreTests' do
 		inherit! :search_paths

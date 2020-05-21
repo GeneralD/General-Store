@@ -22,8 +22,7 @@
 		B3467A36246D337500C03E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3467A35246D337500C03E8A /* Assets.xcassets */; };
 		B3467A39246D337500C03E8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3467A37246D337500C03E8A /* Main.storyboard */; };
 		B3467A45246D337500C03E8A /* General_StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A44246D337500C03E8A /* General_StoreSpec.swift */; };
-		B3467A50246D421000C03E8A /* CommandTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A4F246D421000C03E8A /* CommandTask.swift */; };
-		B3467A53246D439000C03E8A /* CommandTask+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A52246D439000C03E8A /* CommandTask+Rx.swift */; };
+		B3467A53246D439000C03E8A /* AsyncCommand+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A52246D439000C03E8A /* AsyncCommand+Rx.swift */; };
 		B3467A55246D47AD00C03E8A /* CaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A54246D47AD00C03E8A /* CaskListViewModel.swift */; };
 		B3467A57246D48BB00C03E8A /* ObserverConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */; };
 		B3467A59246D4BBC00C03E8A /* ObservableTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */; };
@@ -71,8 +70,7 @@
 		B3467A40246D337500C03E8A /* General StoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "General StoreTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3467A44246D337500C03E8A /* General_StoreSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General_StoreSpec.swift; sourceTree = "<group>"; };
 		B3467A46246D337500C03E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3467A4F246D421000C03E8A /* CommandTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTask.swift; sourceTree = "<group>"; };
-		B3467A52246D439000C03E8A /* CommandTask+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommandTask+Rx.swift"; sourceTree = "<group>"; };
+		B3467A52246D439000C03E8A /* AsyncCommand+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncCommand+Rx.swift"; sourceTree = "<group>"; };
 		B3467A54246D47AD00C03E8A /* CaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskListViewModel.swift; sourceTree = "<group>"; };
 		B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverConvertible.swift; sourceTree = "<group>"; };
 		B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableTypeExtension.swift; sourceTree = "<group>"; };
@@ -135,23 +133,6 @@
 			path = "User Interfaces";
 			sourceTree = "<group>";
 		};
-		B323666E247040F400274BFE /* CommandTask */ = {
-			isa = PBXGroup;
-			children = (
-				B3467A4F246D421000C03E8A /* CommandTask.swift */,
-				B3467A52246D439000C03E8A /* CommandTask+Rx.swift */,
-			);
-			path = CommandTask;
-			sourceTree = "<group>";
-		};
-		B327DEDC246F854000F029B9 /* InApp Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B323666E247040F400274BFE /* CommandTask */,
-			);
-			path = "InApp Frameworks";
-			sourceTree = "<group>";
-		};
 		B327DEE0246F9DCD00F029B9 /* Sample Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +188,7 @@
 				B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */,
 				B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */,
 				B323666A247003D000274BFE /* URL+Rx.swift */,
+				B3467A52246D439000C03E8A /* AsyncCommand+Rx.swift */,
 				B39567982474283F00C4DC36 /* GBDeviceInfoExtension.swift */,
 			);
 			path = Extensions;
@@ -241,7 +223,6 @@
 				B3467A60246D580E00C03E8A /* Views */,
 				B3467A61246D581500C03E8A /* ViewModels */,
 				B3467A51246D435200C03E8A /* Extensions */,
-				B327DEDC246F854000F029B9 /* InApp Frameworks */,
 				B3467A31246D337200C03E8A /* AppDelegate.swift */,
 			);
 			path = Sources;
@@ -452,10 +433,9 @@
 				B3467A5F246D542300C03E8A /* CaskItemViewModel.swift in Sources */,
 				B3467A55246D47AD00C03E8A /* CaskListViewModel.swift in Sources */,
 				B323666B247003D000274BFE /* URL+Rx.swift in Sources */,
-				B3467A50246D421000C03E8A /* CommandTask.swift in Sources */,
 				B3236670247052C200274BFE /* FormulaModel.swift in Sources */,
 				B3467A34246D337200C03E8A /* CaskListViewController.swift in Sources */,
-				B3467A53246D439000C03E8A /* CommandTask+Rx.swift in Sources */,
+				B3467A53246D439000C03E8A /* AsyncCommand+Rx.swift in Sources */,
 				B3467A32246D337200C03E8A /* AppDelegate.swift in Sources */,
 				B3467A5C246D53F700C03E8A /* CaskItemViewController.swift in Sources */,
 				B39D3495246FA1C100C07234 /* Homebrew.swift in Sources */,

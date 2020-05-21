@@ -11,6 +11,7 @@ import RxSwift
 import RxRelay
 import Alamofire
 import RxAlamofire
+import SwiftShell
 
 protocol CaskItemViewModelInput {
 	var model: AnyObserver<CaskModel> { get }
@@ -82,8 +83,8 @@ final class CaskItemViewModel: CaskItemViewModelInput, CaskItemViewModelOutput {
 		
 		let command = "/usr/local/bin/brew"
 		_installClick
-			.flatMap { CommandTask(launchPath: command, arguments: "cask", "install", _model.value.token, "--force").rx.response }
-			.subscribe(onNext: { print($0) })
+			.flatMap { runAsync(command, "cask", "install", _model.value.token, "--force").rx.response }
+			.subscribe(onNext: { print($0.read()) })
 			.disposed(by: disposeBag)
 	}
 }
