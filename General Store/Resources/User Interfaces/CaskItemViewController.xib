@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -11,6 +11,7 @@
                 <outlet property="downloadButton" destination="c9W-hK-NgI" id="6bW-j7-KlS"/>
                 <outlet property="installButton" destination="ggH-zJ-48s" id="Lmu-56-II9"/>
                 <outlet property="nameLabel" destination="kyx-mU-t8K" id="YIk-oA-scC"/>
+                <outlet property="uninstallButton" destination="Ye0-dh-1Ja" id="fcL-EL-5fL"/>
                 <outlet property="versionLabel" destination="oKZ-Ln-eUg" id="Ozw-eO-nlv"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
@@ -25,22 +26,29 @@
                     <rect key="frame" x="10" y="214" width="460" height="22"/>
                     <subviews>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fwK-pb-45q">
-                            <rect key="frame" x="0.0" y="-1" width="148" height="23"/>
+                            <rect key="frame" x="0.0" y="-1" width="109" height="23"/>
                             <buttonCell key="cell" type="roundTextured" title="􀎟 Browse" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h9D-kN-Ge1">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" size="13" name="SFCompactDisplay-Regular"/>
                             </buttonCell>
                         </button>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-hK-NgI">
-                            <rect key="frame" x="156" y="-1" width="148" height="23"/>
+                            <rect key="frame" x="117" y="-1" width="109" height="23"/>
                             <buttonCell key="cell" type="roundTextured" title="􀈨 Download" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nSd-pv-Ftk">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" size="13" name="SFCompactDisplay-Regular"/>
                             </buttonCell>
                         </button>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ggH-zJ-48s">
-                            <rect key="frame" x="312" y="-1" width="148" height="23"/>
+                            <rect key="frame" x="234" y="-1" width="109" height="23"/>
                             <buttonCell key="cell" type="roundTextured" title="􀐛 Install" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E9O-JB-X7b">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" size="13" name="SFCompactDisplay-Regular"/>
+                            </buttonCell>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ye0-dh-1Ja">
+                            <rect key="frame" x="351" y="-1" width="109" height="23"/>
+                            <buttonCell key="cell" type="roundTextured" title="􀈒 Uninstall" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VnN-79-eU6">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" size="13" name="SFCompactDisplay-Regular"/>
                             </buttonCell>
@@ -50,8 +58,10 @@
                         <integer value="1000"/>
                         <integer value="1000"/>
                         <integer value="1000"/>
+                        <integer value="1000"/>
                     </visibilityPriorities>
                     <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
                         <real value="3.4028234663852886e+38"/>
                         <real value="3.4028234663852886e+38"/>
                         <real value="3.4028234663852886e+38"/>

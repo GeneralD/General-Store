@@ -18,6 +18,7 @@ protocol FormulaItemViewModelInput {
 	var browseClick: AnyObserver<()> { get }
 	var downloadClick: AnyObserver<()> { get }
 	var installClick: AnyObserver<()> { get }
+	var uninstallClick: AnyObserver<()> { get }
 }
 
 protocol FormulaItemViewModelOutput {
@@ -32,6 +33,7 @@ final class FormulaItemViewModel: FormulaItemViewModelInput, FormulaItemViewMode
 	let browseClick: AnyObserver<()>
 	let downloadClick: AnyObserver<()>
 	let installClick: AnyObserver<()>
+	let uninstallClick: AnyObserver<()>
 	
 	// MARK: Outputs
 	let name: Observable<String?>
@@ -51,6 +53,9 @@ final class FormulaItemViewModel: FormulaItemViewModelInput, FormulaItemViewMode
 		
 		let _installClick = PublishRelay<()>()
 		self.installClick = _installClick.asObserver()
+		
+		let _uninstallClick = PublishRelay<()>()
+		self.uninstallClick = _uninstallClick.asObserver()
 		
 		let _name = BehaviorRelay<String?>(value: nil)
 		self.name = _name.asObservable()
@@ -85,7 +90,18 @@ final class FormulaItemViewModel: FormulaItemViewModelInput, FormulaItemViewMode
 		let command = "/usr/local/bin/brew"
 		_installClick
 			.flatMap { runAsync(command, "install", _model.value.name, "--force").rx.response }
-			.subscribe(onNext: { print($0.read()) })
+			.subscribe(
+				onNext: { print($0.read()) },
+				onError: { e in (e as? StdError).map { print($0.stream.read()) } },
+				onCompleted: { print("Installing \(model.name) has completed.") })
+			.disposed(by: disposeBag)
+		
+		_uninstallClick
+			.flatMap { runAsync(command, "uninstall", _model.value.name, "--force").rx.response }
+			.subscribe(
+				onNext: { print($0.read()) },
+				onError: { e in (e as? StdError).map { print($0.stream.read()) } },
+				onCompleted: { print("Uninstalling \(model.name) has completed.") })
 			.disposed(by: disposeBag)
 	}
 }

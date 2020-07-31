@@ -21,6 +21,7 @@ class FormulaItemViewController: NSCollectionViewItem {
 	@IBOutlet weak var browseButton: NSButton!
 	@IBOutlet weak var downloadButton: NSButton!
 	@IBOutlet weak var installButton: NSButton!
+	@IBOutlet weak var uninstallButton: NSButton!
 	
 	private var disposeBag = DisposeBag()
 	
@@ -52,6 +53,10 @@ extension FormulaItemViewController: Configurable {
 			.bind(to: input.installClick)
 			.disposed(by: disposeBag)
 		
+		uninstallButton.rx.tap
+			.bind(to: input.uninstallClick)
+			.disposed(by: disposeBag)
+		
 		output.name
 			.bind(to: nameLabel.rx.text)
 			.disposed(by: disposeBag)
@@ -61,4 +66,3 @@ extension FormulaItemViewController: Configurable {
 			.disposed(by: disposeBag)
 	}
 }
-
