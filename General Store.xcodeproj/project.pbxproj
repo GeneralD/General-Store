@@ -32,6 +32,8 @@
 		B39567992474283F00C4DC36 /* GBDeviceInfoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39567982474283F00C4DC36 /* GBDeviceInfoExtension.swift */; };
 		B39D3495246FA1C100C07234 /* Homebrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D3494246FA1C100C07234 /* Homebrew.swift */; };
 		B39D3497246FA55C00C07234 /* CaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D3496246FA55C00C07234 /* CaskModel.swift */; };
+		B3F3BD1A25939EF700FD4945 /* RxTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3BD1825939EF700FD4945 /* RxTrigger.swift */; };
+		B3F3BD1B25939EF700FD4945 /* RxProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3BD1925939EF700FD4945 /* RxProperty.swift */; };
 		BFD47C1C148F79E721F161C0 /* Pods_General_Store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B5711FF36A58C5353BFC86 /* Pods_General_Store.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		B39567982474283F00C4DC36 /* GBDeviceInfoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBDeviceInfoExtension.swift; sourceTree = "<group>"; };
 		B39D3494246FA1C100C07234 /* Homebrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homebrew.swift; sourceTree = "<group>"; };
 		B39D3496246FA55C00C07234 /* CaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskModel.swift; sourceTree = "<group>"; };
+		B3F3BD1825939EF700FD4945 /* RxTrigger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTrigger.swift; sourceTree = "<group>"; };
+		B3F3BD1925939EF700FD4945 /* RxProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxProperty.swift; sourceTree = "<group>"; };
 		C34D95A76C20C691A9254F00 /* Pods-General Store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General Store.debug.xcconfig"; path = "Target Support Files/Pods-General Store/Pods-General Store.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,10 +189,7 @@
 		B3467A51246D435200C03E8A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */,
-				B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */,
-				B323666A247003D000274BFE /* URL+Rx.swift */,
-				B3467A52246D439000C03E8A /* AsyncCommand+Rx.swift */,
+				B3F3BD1125939EAE00FD4945 /* Rx */,
 				B39567982474283F00C4DC36 /* GBDeviceInfoExtension.swift */,
 			);
 			path = Extensions;
@@ -246,6 +247,35 @@
 				B323666F247052C200274BFE /* FormulaModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B3F3BD1125939EAE00FD4945 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				B3F3BD1725939EF700FD4945 /* PropertyWrapper */,
+				B3F3BD1425939EB400FD4945 /* Common */,
+				B323666A247003D000274BFE /* URL+Rx.swift */,
+				B3467A52246D439000C03E8A /* AsyncCommand+Rx.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		B3F3BD1425939EB400FD4945 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B3467A56246D48BB00C03E8A /* ObserverConvertible.swift */,
+				B3467A58246D4BBC00C03E8A /* ObservableTypeExtension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B3F3BD1725939EF700FD4945 /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				B3F3BD1825939EF700FD4945 /* RxTrigger.swift */,
+				B3F3BD1925939EF700FD4945 /* RxProperty.swift */,
+			);
+			path = PropertyWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,10 +465,12 @@
 				B323666B247003D000274BFE /* URL+Rx.swift in Sources */,
 				B3236670247052C200274BFE /* FormulaModel.swift in Sources */,
 				B3467A34246D337200C03E8A /* CaskListViewController.swift in Sources */,
+				B3F3BD1A25939EF700FD4945 /* RxTrigger.swift in Sources */,
 				B3467A53246D439000C03E8A /* AsyncCommand+Rx.swift in Sources */,
 				B3467A32246D337200C03E8A /* AppDelegate.swift in Sources */,
 				B3467A5C246D53F700C03E8A /* CaskItemViewController.swift in Sources */,
 				B39D3495246FA1C100C07234 /* Homebrew.swift in Sources */,
+				B3F3BD1B25939EF700FD4945 /* RxProperty.swift in Sources */,
 				B3467A57246D48BB00C03E8A /* ObserverConvertible.swift in Sources */,
 				B323667624711FE200274BFE /* FormulaListViewModel.swift in Sources */,
 				B323667A247121F500274BFE /* FormulaItemViewModel.swift in Sources */,

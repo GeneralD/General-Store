@@ -22,27 +22,23 @@ protocol FormulaListViewModelOutput {
 final class FormulaListViewModel: FormulaListViewModelInput, FormulaListViewModelOutput {
 	
 	// MARK: Inputs
-	let reload: AnyObserver<()>
+	@RxTrigger var reload: AnyObserver<()>
 	
 	// MARK: Outputs
-	let items: Observable<[FormulaItemViewModel]>
+	@RxProperty(value: []) var items: Observable<[FormulaItemViewModel]>
 	
 	private let disposeBag = DisposeBag()
 	
 	init() {
-		let _reload = BehaviorRelay<()>(value: ())
-		reload = _reload.asObserver()
-		
-		let _items = BehaviorRelay<[FormulaItemViewModel]>(value: [])
-		items = _items.asObservable()
-		
 		let provider = MoyaProvider<Homebrew>()
-		_reload
+		
+		Observable.just(())
+			.concat($reload)
 			.flatMap { provider.rx.request(.formulaList) }
 			.filterSuccessfulStatusCodes()
 			.map([FormulaModel].self)
 			.map { $0.map(FormulaItemViewModel.init(model: )) }
-			.bind(to: _items)
+			.bind(to: $items)
 			.disposed(by: disposeBag)
 	}
 }

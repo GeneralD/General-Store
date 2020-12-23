@@ -22,27 +22,23 @@ protocol CaskListViewModelOutput {
 final class CaskListViewModel: CaskListViewModelInput, CaskListViewModelOutput {
 	
 	// MARK: Inputs
-	let reload: AnyObserver<()>
+	@RxTrigger var reload: AnyObserver<()>
 	
 	// MARK: Outputs
-	let items: Observable<[CaskItemViewModel]>
+	@RxProperty(value: []) var items: Observable<[CaskItemViewModel]>
 	
 	private let disposeBag = DisposeBag()
 	
 	init() {
-		let _reload = BehaviorRelay<()>(value: ())
-		reload = _reload.asObserver()
-		
-		let _items = BehaviorRelay<[CaskItemViewModel]>(value: [])
-		items = _items.asObservable()
-
 		let provider = MoyaProvider<Homebrew>()
-		_reload
+		
+		Observable.just(())
+			.concat($reload)
 			.flatMap { provider.rx.request(.caskList) }
 			.filterSuccessfulStatusCodes()
 			.map([CaskModel].self)
 			.map { $0.map(CaskItemViewModel.init(model: )) }
-			.bind(to: _items)
+			.bind(to: $items)
 			.disposed(by: disposeBag)
 	}
 }
