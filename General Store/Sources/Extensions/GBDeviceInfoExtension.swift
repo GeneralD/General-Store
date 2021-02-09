@@ -27,6 +27,8 @@ extension GBDeviceInfo {
 			return "mojave"
 		case 15:
 			return "catalina"
+		case 16:
+			return "big_sur"
 		default:
 			return nil
 		}
